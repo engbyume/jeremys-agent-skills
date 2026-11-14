@@ -49,13 +49,14 @@ These entries have no claimed upstream repository. The descriptions are public-s
 
 | Skill | Why it is included |
 | --- | --- |
-| Codex Usage Fallback Router | Explicitly approved local skill for quota checks and automatic use of an existing preapproved free fallback when task data is permitted. Low quota alone does not stop the goal. |
+| Codex Usage Fallback Router | Explicitly approved local skill for quota checks, a 10%-remaining weekly global stop, and a permitted five-hour fallback at the 5% threshold. |
 | Eval Loop | Explicitly approved local skill for bounded verification. A retry limit ends the current approach, not the goal; replan and keep safe work moving. |
 | Autonomous Skill Routing | Explicitly approved local skill for compact skill discovery, safe defaults, and keeping the same goal active through failures and fallbacks. |
 | Agent Mentor | Explicitly approved local skill for authority, scope, and runtime evidence checks. |
 | Jeremy Batch | Explicitly approved local skill for batching independent operations. |
 | Composio CLI | Explicitly approved local skill for mandatory Composio discovery and schema guidance; tool calls remain task-scoped. |
-| Usage Limit Resume | Explicitly approved local skill for passive reset checkpoints after no permitted route remains. It preserves reserve and final-review safeguards and does not create a task-specific automation. |
+| Usage Limit Resume | Explicitly approved local skill for passive reset checkpoints. It pauses all goals at 10% weekly remaining, preserves reserve and final-review safeguards, and creates no task-specific automation. |
+| Codex Email Approval Gateway | Public-safe first-party skill for once-per-reset 5% quota alerts and verified, same-thread approval replies relayed to the matching Codex task; native permission gates remain in force. |
 | Designmaxxing | First-party portable UI design skill for public-product goal discovery, direct implementation, Computer Use by default for Codex UI review and interaction testing, shadcn/Base UI design systems, push-based live UX, accessibility, approved asset sourcing, unique-by-default website design, mandatory Awwwards (https://www.awwwards.com/) inspiration research, and conditional Platform Architecture routing. Updated 2026-10-18. |
 | Securitymaxxing | First-party application-security skill with 70 core and 23 conditional checks, research-first reuse guidance, autonomous authorized local review, and real access, production, and security-scope gates. Updated 2026-11-14. |
 | Platform Architecture | First-party conditional guidance for backend, distributed systems, push-based realtime updates, data consistency, delivery, observability, recovery, and public-product service selection; routes detailed work to existing specialists. Added 2026-10-17. |
@@ -81,7 +82,7 @@ General agent capabilities such as browser automation, context compression, grap
 - 2026-11-09: Published Progressive Codex Model Router as a standalone public repository. This catalog links to the root-level skill instead of bundling a second copy.
 - 2026-11-14: Published Background Skill Fixer as a standalone public repository and added the full reviewed package to skills/background-skill-fixer.
 - 2026-11-14: Strengthened Designmaxxing, Securitymaxxing, and Platform Architecture with research-first capability planning, evidence-based reuse, current source checks, and justified custom implementation.
-- 2026-11-14: Updated the public autonomy compatibility guidance and catalog summaries to keep authorized work moving through safe fallbacks, without ending goals on a failed approach or low weekly quota.
+- 2026-11-14: Updated public autonomy guidance to keep authorized work moving after a failed method; restored the 10%-remaining weekly global stop and documented 5%-remaining quota emails and scoped approval replies.
 - 2026-10-17: Added the pinned shadcn/ui source link. Its audited local adaptation is installed in Codex-compatible runtimes; third-party instructions are not copied into this library.
 
 - 2026-10-15: Added the Apache-2.0 NVIDIA Skillspector source and two public-safe intake skills. The local intake route now requires no-LLM scans and source review for every skill change.
