@@ -5,6 +5,11 @@ description: Mandatory review gate for every agent-skill download, import, updat
 
 # Skill Inspector
 
+## Activation
+
+**Activation:** Mandatory when the prompt matches.
+**Trigger:** Use for skill-source intake, update, activation, or explicit inventory. Scan each package and review findings before activation.
+
 ## Goal
 
 Decide whether an AI agent skill is safe to install, keep installed, or submit for review.

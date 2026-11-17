@@ -5,6 +5,11 @@ description: Mandatory first-pass security baseline for every software or digita
 
 # Securitymaxxing
 
+## Activation
+
+**Activation:** Mandatory when the prompt matches.
+**Trigger:** Use for every software or digital-product creation, change, review, test, or release-preparation task. It does not authorize production changes or offensive testing.
+
 ## First-pass routing
 
 This baseline is mandatory for every software or digital-product creation, change, review, test, or release task, regardless of the requested feature, UI slice, prototype, or deliverable and whether or not the user explicitly asks for security. Load it after mandatory process skills and before security specialists or implementation. It does not apply to unrelated non-software artifacts. If user-facing UI/UX is in scope, load designmaxxing in this same first pass. When both apply, load both baselines before specialists. Then select only matching specialist skills from the active runtime catalog.

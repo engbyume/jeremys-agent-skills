@@ -7,6 +7,11 @@ metadata:
 
 # Universal skill audit
 
+## Activation
+
+**Activation:** Mandatory when the prompt matches.
+**Trigger:** Use for every skill download, import, install, update, activation, inventory, or removal. Stage without execution and require complete source review before activation.
+
 Use this skill for every skill download, import, install, update, activation, or explicit existing-skill inventory and removal request. Apply it across configured agent runtimes.
 
 ## Mandatory gate
