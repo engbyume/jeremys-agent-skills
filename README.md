@@ -4,7 +4,7 @@ Portable, public-safe skill packages for agents that design, build, secure, and 
 
 **11 installable packages** · **78 catalog records** · **10 categories**
 
-[Browse the packages](#first-party-packages) · [Full catalog](skills.json) · [Sources and provenance](SOURCES.md)
+[Browse by category](#browse-by-category) · [Installable packages](#first-party-packages) · [Full catalog](skills.json) · [Sources and provenance](SOURCES.md)
 
 ## Install
 
@@ -22,17 +22,32 @@ The CLI documents anonymous usage telemetry, including repository and skill iden
 
 Good agent work depends on small, repeatable decisions: which guidance applies, what evidence to collect, and where to stop for permission. These packages make those decisions easier to reuse across projects and agent runtimes.
 
-The repository keeps installable first-party skills separate from the wider source catalog. Upstream skills remain linked to their authors. Their instructions are not copied here.
+Every record sits under `skills/<category>/<skill>/`. The 11 installable packages have a `SKILL.md`; link-only entries have a `CATALOG.md` card. Upstream instructions remain in their original repositories.
 
 ## Common starting points
 
 | Example request | Start here |
 | --- | --- |
-| “The mobile bottom bar covers the home indicator.” | [Mobile Native](skills/mobile-native/SKILL.md) |
-| “Help shape a distinctive product UI and its data-collection flow.” | [Designmaxxing](skills/designmaxxing/SKILL.md) |
-| “Review this software change against the security baseline.” | [Securitymaxxing](skills/securitymaxxing/SKILL.md) |
-| “Check a skill source and scan it before activation.” | [Universal Skill Audit](skills/universal-skill-audit/SKILL.md) |
-| “Prepare a release candidate with health checks and rollback planning.” | [Agent-Managed CI/CD](skills/agent-managed-cicd/SKILL.md)
+| “The mobile bottom bar covers the home indicator.” | [Mobile Native](skills/creative-and-visual-work/mobile-native/SKILL.md) |
+| “Help shape a distinctive product UI and its data-collection flow.” | [Designmaxxing](skills/creative-and-visual-work/designmaxxing/SKILL.md) |
+| “Review this software change against the security baseline.” | [Securitymaxxing](skills/security/securitymaxxing/SKILL.md) |
+| “Check a skill source and scan it before activation.” | [Universal Skill Audit](skills/security/universal-skill-audit/SKILL.md) |
+| “Prepare a release candidate with health checks and rollback planning.” | [Agent-Managed CI/CD](skills/developer-workflows/agent-managed-cicd/SKILL.md)
+
+## Browse by category
+
+Catalog records are grouped by primary job. Each category folder contains one page per skill and a category index.
+
+- [Agent Efficiency](skills/agent-efficiency/README.md)
+- [Creative and Visual Work](skills/creative-and-visual-work/README.md)
+- [Developer Workflows](skills/developer-workflows/README.md)
+- [Documents and Data](skills/documents-and-data/README.md)
+- [Media Analysis](skills/media-analysis/README.md)
+- [Memory and Knowledge](skills/memory-and-knowledge/README.md)
+- [Planning and Quality](skills/planning-and-quality/README.md)
+- [Research and Investigation](skills/research-and-investigation/README.md)
+- [Security](skills/security/README.md)
+- [Writing and Communication](skills/writing-and-communication/README.md)
 
 ## First-party packages
 
@@ -40,27 +55,27 @@ Ordered by common project workflow.
 
 ### Product and engineering
 
-- [Designmaxxing](skills/designmaxxing/SKILL.md): product-specific UI, accessibility, research, contextual motion guidance, and a mandatory personal-data baseline.
-- [Mobile Native](skills/mobile-native/SKILL.md): phone-specific behavior for websites, web apps, and PWAs, with real-device checks.
-- [Platform Architecture](skills/platform-architecture/SKILL.md): backend, data consistency, realtime, delivery, observability, and recovery choices.
-- [Securitymaxxing](skills/securitymaxxing/SKILL.md): the first-pass application-security baseline for software changes, with a researched attack catalog for apps, websites, APIs, and games.
+- [Designmaxxing](skills/creative-and-visual-work/designmaxxing/SKILL.md): product-specific UI, accessibility, research, contextual motion guidance, and a mandatory personal-data baseline.
+- [Mobile Native](skills/creative-and-visual-work/mobile-native/SKILL.md): phone-specific behavior for websites, web apps, and PWAs, with real-device checks.
+- [Platform Architecture](skills/developer-workflows/platform-architecture/SKILL.md): backend, data consistency, realtime, delivery, observability, and recovery choices.
+- [Securitymaxxing](skills/security/securitymaxxing/SKILL.md): the first-pass application-security baseline for software changes, with a researched attack catalog for apps, websites, APIs, and games.
 
 ### Skill trust and recovery
 
-- [Universal Skill Audit](skills/universal-skill-audit/SKILL.md): source provenance, complete security scans, and source-level review before skill activation.
-- [Skill Inspector](skills/skill-inspector/SKILL.md): focused static scanning and evidence-based review of skill packages.
-- [Background Skill Fixer](skills/background-skill-fixer/SKILL.md): bounded root-cause repair when a skill fails and an authorized fallback begins.
+- [Universal Skill Audit](skills/security/universal-skill-audit/SKILL.md): source provenance, complete security scans, and source-level review before skill activation.
+- [Skill Inspector](skills/security/skill-inspector/SKILL.md): focused static scanning and evidence-based review of skill packages.
+- [Background Skill Fixer](skills/agent-efficiency/background-skill-fixer/SKILL.md): bounded root-cause repair when a skill fails and an authorized fallback begins.
 
 ### Workflow and continuity
 
-- [Agent-Managed CI/CD](skills/agent-managed-cicd/SKILL.md): release candidates, health checks, rollback planning, and explicit release gates.
-- [Codex Email Approval Gateway](skills/codex-email-approval-gateway/SKILL.md): task-scoped approval relays and threshold alerts without a scheduled poller.
-- [Task Observer](skills/task-observer/SKILL.md): prompt-start, mid-task, and end checks for task scope, evidence, and skill autonomy.
-- [GBrain Memory](skills/gbrain-memory/SKILL.md): bounded local-first recall with automatic capture and provider calls off.
+- [Agent-Managed CI/CD](skills/developer-workflows/agent-managed-cicd/SKILL.md): release candidates, health checks, rollback planning, and explicit release gates.
+- [Codex Email Approval Gateway](skills/agent-efficiency/codex-email-approval-gateway/SKILL.md): task-scoped approval relays and threshold alerts without a scheduled poller.
+- [Task Observer](skills/agent-efficiency/task-observer/SKILL.md): prompt-start, mid-task, and end checks for task scope, evidence, and skill autonomy.
+- [GBrain Memory](skills/memory-and-knowledge/gbrain-memory/SKILL.md): bounded local-first recall with automatic capture and provider calls off.
 
 ## Full catalog and provenance
 
-The [78-entry catalog](skills.json) records short descriptions, categories, and source metadata. [SOURCES.md](SOURCES.md) explains which upstream repositories are included and why. Only the packages under [`skills/`](skills/) are installable from this repository. Other entries point to upstream projects or contain an approved redacted summary.
+The [78-entry catalog](skills.json) records short descriptions, categories, and source metadata. Browse category indexes in [`skills/`](#browse-by-category), or read [SOURCES.md](SOURCES.md) for provenance. Every catalog record has a category folder and `CATALOG.md`; the 11 installable packages also have `SKILL.md` files. Upstream instructions stay with their authors.
 
 ## Public-safety rules
 

@@ -1,6 +1,6 @@
 # Sources and provenance
 
-This catalog was refreshed from the installed skill directories, plugin metadata, and the local skills lockfile on 2026-10-12.
+This source ledger records the provenance decisions for the public catalog. Category cards were added on 2026-11-17; they link to original repositories and do not copy third-party skill instructions.
 
 ## Included repositories
 
@@ -45,7 +45,7 @@ This catalog was refreshed from the installed skill directories, plugin metadata
 
 ## Explicitly approved local entries
 
-These entries have no claimed upstream repository. The descriptions are public-safe, and approved first-party packages are under skills/.
+These entries have no claimed upstream repository. The descriptions are public-safe, and approved first-party packages are under `skills/<category>/<skill>/`.
 
 | Skill | Why it is included |
 | --- | --- |
@@ -81,7 +81,7 @@ General agent capabilities such as browser automation, context compression, grap
 
 - 2026-11-09: Aligned Usage Limit Resume final-review guidance with the parent-Luna, child-only Codex routing rule; preserved its serialized review action for compatibility.
 - 2026-11-09: Published Progressive Codex Model Router as a standalone public repository. This catalog links to the root-level skill instead of bundling a second copy.
-- 2026-11-14: Published Background Skill Fixer as a standalone public repository and added the full reviewed package to skills/background-skill-fixer.
+- 2026-11-14: Published Background Skill Fixer as a standalone public repository and added the full reviewed package to `skills/agent-efficiency/background-skill-fixer`.
 - 2026-11-14: Strengthened Designmaxxing, Securitymaxxing, and Platform Architecture with research-first capability planning, evidence-based reuse, current source checks, and justified custom implementation.
 - 2026-11-16: Reconciled quota and email approval guidance to active-task-only checks. Preserve the weekly 10%-remaining global stop, send 5%-remaining alerts only when an active task observes the threshold, process replies only in the matching active task, and do not use scheduled pollers.
 - 2026-11-16: Expanded Designmaxxing from the General-Legal policy-template route to a mandatory user-data baseline for products that collect personal data, with tracker consent, data rights, retention, subprocessors, transfer safeguards, security, and breach response.
