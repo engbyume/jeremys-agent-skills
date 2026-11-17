@@ -8,19 +8,13 @@ Portable, public-safe skill packages for agents that design, build, secure, and 
 
 ## Install
 
-Preview the packages in this repository:
+Install selected packages with the [Skills CLI](https://github.com/vercel-labs/skills/blob/main/docs/commands.md):
 
 ```sh
-npx skills@latest add engbyume/universal-agent-skills --list
+npx skills@latest add engbyume/universal-agent-skills
 ```
 
-Install one or more packages:
-
-```sh
-npx skills@latest add engbyume/universal-agent-skills --skill designmaxxing --skill mobile-native
-```
-
-The [Skills CLI](https://github.com/vercel-labs/skills/blob/main/docs/commands.md) installs to the current project by default. Add `-g` for user-level installation. Choose packages that match the work.
+The CLI prompts you to choose packages and target agents. Use `--list` to preview available packages, repeat `--skill <name>` to select a specific set, and add `-g` for user-level installation.
 
 The CLI documents anonymous usage telemetry, including repository and skill identifiers, plus the `DISABLE_TELEMETRY=1` and `DO_NOT_TRACK=1` opt-outs. See its [telemetry notes](https://github.com/vercel-labs/skills/blob/main/docs/troubleshooting.md#telemetry).
 
