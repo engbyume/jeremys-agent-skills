@@ -18,22 +18,6 @@ The CLI prompts you to choose packages and target agents. Use `--list` to previe
 
 The CLI documents anonymous usage telemetry, including repository and skill identifiers, plus the `DISABLE_TELEMETRY=1` and `DO_NOT_TRACK=1` opt-outs. See its [telemetry notes](https://github.com/vercel-labs/skills/blob/main/docs/troubleshooting.md#telemetry).
 
-## Why this library exists
-
-Good agent work depends on small, repeatable decisions: which guidance applies, what evidence to collect, and where to stop for permission. These packages make those decisions easier to reuse across projects and agent runtimes.
-
-Every record sits under `skills/<category>/<skill>/`. The 11 installable packages have a `SKILL.md`; catalog-only entries have a `CATALOG.md` card. This release contains 200 selected entries from 535 active skill names in the local inventory. The other 189 entries are catalog-only. They link to pinned upstream sources or describe explicitly approved local skills. Upstream instructions are not copied.
-
-## Common starting points
-
-| Example request | Start here |
-| --- | --- |
-| “The mobile bottom bar covers the home indicator.” | [Mobile Native](skills/design/mobile-native/SKILL.md) |
-| “Help shape a distinctive product UI and its data-collection flow.” | [Designmaxxing](skills/design/designmaxxing/SKILL.md) |
-| “Review this software change against the security baseline.” | [Securitymaxxing](skills/security/securitymaxxing/SKILL.md) |
-| “Check a skill source and scan it before activation.” | [Universal Skill Audit](skills/security/universal-skill-audit/SKILL.md) |
-| “Prepare a release candidate with health checks and rollback planning.” | [Agent-Managed CI/CD](skills/development/agent-managed-cicd/SKILL.md)
-
 ## Browse by category
 
 The category folders use short names:
