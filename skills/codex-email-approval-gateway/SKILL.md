@@ -7,7 +7,7 @@ metadata:
 
 # Codex Email Approval Gateway
 
-Use this skill when an authorized task needs a user decision by email, when processing a reply to an approval email, or when monitoring the requested Codex quota alerts. It requires an authenticated Gmail connector and, for relays, a Codex thread messaging tool.
+Use this skill inside an active task when it needs a user decision by email, processes a reply to its registered request, or observes a quota threshold during a permitted in-chat usage check. It requires authenticated Gmail and, for relays, a Codex thread messaging tool. Never create a recurring poller or new chat for this skill.
 
 ## Authorization and scope
 
@@ -27,7 +27,7 @@ Use this skill when an authorized task needs a user decision by email, when proc
 
 ## Process replies
 
-The standing gateway automation may search only the approval threads registered in its local state file. It must:
+The matching active task may check only approval threads registered in its local state file, when that task is active or resumes. Do not run background polling or create a chat to check a reply. It must:
 
 - Read only the registered Gmail thread IDs, verify the Gmail profile's authenticated address, and ignore replies from any other sender.
 - Require the reply to be in the exact original Gmail thread, newer than the request, before expiration, and tied to the exact request ID.
@@ -37,12 +37,12 @@ The standing gateway automation may search only the approval threads registered 
 - Mark the request processed only after the Codex message send succeeds. Preserve the message ID and decision for audit.
 - Treat an approval as authorization for the exact action in the email. A decline stops only that action; continue other safe work.
 
-## 5% quota alerts
+## In-chat quota alerts
 
-- Read only the five-hour and weekly usage percentages and reset times from the read-only Codex usage tool.
-- Send one HTML email to the authenticated self-address when either bucket reaches 5% remaining. Send no duplicate alert for the same bucket reset window.
-- Mark an alert sent only after Gmail Sent readback confirms it. Keep only bucket name, reset time, and sent message ID in the state file.
-- At weekly remaining usage of 10% or less, stop all goals and tasks as required by the global quota policy. The standing monitor may continue only the 5% alert and email-reply relay; it must not do task work.
+- Read usage only when the active-task cadence in codex-usage-fallback-router calls for it: before unusually high-cost model work, long/deep research, after a quota warning, or when a recent reading is near a threshold.
+- Do not schedule periodic usage checks or email-reply polling. Do not create a new chat to check quota or a reply.
+- If an active task observes either bucket at 5% remaining or less, send one HTML email per bucket reset window. Verify Sent before recording the alert.
+- At weekly remaining usage of 10% or less, pause all goals and tasks as required by the global quota policy. There is no background monitor; the active task preserves its checkpoint and stops.
 - At five-hour remaining usage of 5% or less, use the configured preapproved fallback only when weekly capacity is above the global floor and project data may be sent to that provider.
 
 ## State helper
@@ -66,4 +66,4 @@ Use `decision declined` for a decline and `bucket five_hour` for the five-hour a
 
 ## Runtime capability limit
 
-If Gmail or Codex thread messaging is unavailable, do not claim automatic relay. Send the blocker email and ask in the active task under the global rule. If a native Codex permission prompt remains after relaying the user's decision, preserve the native gate and report that the app still requires its supported approval action.
+If Gmail or Codex thread messaging is unavailable, do not claim automatic relay. Send the blocker email and ask in the active task under the global rule. After a verified email approval of an exact UI action, Computer Use may navigate and change the setting up to the native authentication prompt, including selecting a visible Use Password option. Stop before entering a password or code. Never ask for, store, echo, or type credentials, even if they appear in chat or email. Ask the user to authenticate on the device; continue only after the supported UI confirms the action. Email approval does not dismiss a native Codex or operating-system permission prompt.

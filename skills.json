@@ -13,7 +13,7 @@
     ],
     "explicit_exceptions": [
       "gbrain-memory: owner-requested, redacted local-first memory adapter; no automatic capture, provider calls, or machine-specific configuration.",
-      "codex-email-approval-gateway: owner-authorized public-safe first-party skill for scoped approval replies and quota alerts; no mailbox-wide access or native permission bypass."
+      "codex-email-approval-gateway: owner-authorized public-safe first-party skill for active-task-only approval replies and quota alerts; no mailbox-wide access, scheduled poller, or native permission bypass."
     ]
   },
   "skills": [
@@ -679,7 +679,7 @@
       "id": "usage-limit-resume",
       "name": "Usage Limit Resume",
       "category": "agent-efficiency",
-      "description": "Records passive quota checkpoints, pauses all goals at 10% weekly remaining, preserves reserve and final-review safeguards, and creates no task-specific automation.",
+      "description": "Records passive quota checkpoints and pauses all goals at 10% weekly remaining. Quota reads and alerts stay inside active tasks; it preserves reserve and final-review safeguards and creates no task-specific automation.",
       "installed_name": "usage-limit-resume",
       "source_repository": null,
       "source_path": null,
@@ -866,11 +866,11 @@
       "id": "codex-email-approval-gateway",
       "name": "Codex Email Approval Gateway",
       "category": "agent-efficiency",
-      "description": "Sends one five-hour and weekly quota alert at 5% remaining per reset window, and relays verified same-thread approval replies to the registered Codex task while preserving native permission gates.",
+      "description": "Sends 5% remaining quota alerts only when an active Codex task observes the threshold, once per reset window, and relays verified same-thread approval replies to the registered task. It does not poll or clear native permission prompts.",
       "installed_name": "codex-email-approval-gateway",
       "source_repository": null,
       "source_path": "skills/codex-email-approval-gateway",
-      "provenance": "Explicitly owner-authorized public-safe first-party skill and state helper; no private paths, credentials, or mailbox-wide access.",
+      "provenance": "Explicitly owner-authorized public-safe first-party skill and state helper; no private paths, credentials, mailbox-wide access, scheduled polling, or native permission bypass.",
       "source_snapshot": null
     }
   ]
