@@ -70,7 +70,6 @@ html {
 }
 ```
 
-Remove the browser's tap highlight only when the design replaces it with an equally clear focus and press state.
 
 ### Viewport and keyboard
 
