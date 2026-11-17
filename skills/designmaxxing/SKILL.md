@@ -1,6 +1,6 @@
 ---
 name: designmaxxing
-description: First-pass UI/UX guidance for websites, apps, games, widgets, and design systems. Also routes personal-data collection and privacy-policy work through mandatory safeguards and jurisdiction-matched templates.
+description: First-pass UI/UX guidance for websites, apps, games, widgets, and design systems. Also routes personal-data collection and privacy-policy work through mandatory safeguards and routes mobile web/PWA work to mobile-native for viewport, touch, safe-area, and device checks.
 ---
 
 # Designmaxxing
@@ -10,6 +10,7 @@ Use this skill when a task includes interface design. Apply it as a conditional 
 ## First-pass routing
 
 - Load this baseline after mandatory process skills and before design specialists when a task includes user-facing UI/UX work for a website, app, game, widget, component, prototype, or design system.
+- For any website, web app, or PWA designed for phone or touch use, load `mobile-native` after the matching Designmaxxing and Securitymaxxing baselines and before implementation specialists. It covers mobile viewport, input, touch, scrolling, safe areas, keyboard behavior, and hardware verification. It is web-only; use native-platform skills for React Native.
 - Load this skill whenever a digital product will collect, receive, infer, store, share, or track personal data, or when a privacy policy is requested or required. This applies to websites, apps, games, SaaS, APIs, and internal products, even when UI design is out of scope. Apply the user-data baseline below before collection or implementation.
 - For every software task, load securitymaxxing in the first pass, regardless of the requested feature or deliverable and whether security was explicitly requested. Load designmaxxing when user-facing UI/UX is in scope. When both apply, load both before specialists.
 - After the baseline or baselines, use only matching specialist skills from the active runtime catalog. Specialists add narrower platform, tool, accessibility, or design-system guidance.
