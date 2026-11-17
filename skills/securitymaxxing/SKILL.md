@@ -1,6 +1,6 @@
 ---
 name: securitymaxxing
-description: Mandatory first-pass security baseline for every software or digital-product creation, change, review, test, or release task, including any feature, UI slice, prototype, or deliverable, whether or not security is requested. Includes a mandatory AiSOC applicability check and evaluates all 70 core checks plus triggered conditional checks.
+description: Mandatory first-pass security baseline for every software or digital-product task, whether or not security is requested, including UI-only work. Includes a defensive app, website, API, and game attack catalog, mandatory AiSOC applicability, 70 core checks, and triggered conditional checks.
 ---
 
 # Securitymaxxing
@@ -61,6 +61,11 @@ Apply the active project instructions and the user's current request. This skill
 - Fix confirmed findings within the authorized task, then rerun the checks that failed. Record the check, result, evidence, and checks that could not run or were out of scope.
 - State limits clearly. A clean checklist or automated scan is not proof that software is secure.
 
-## Checklist reference
+## Reference files
 
-The 70 core checks and their applicability notes are in `references/application-security-checks.md`. The additional 23 conditional checks for platform and lifecycle risks are in `references/conditional-platform-security-checks.md`. Evaluate all 70 core checks and each of the 23 conditional checks whose trigger applies. Record an architecture-specific reason for every check marked not applicable. Use current primary security guidance for the stack and threat model.
+- [Application security checks](references/application-security-checks.md): Evaluate the 70 core checks against the product architecture and threat model.
+- [Conditional platform and lifecycle checks](references/conditional-platform-security-checks.md): Evaluate the 23 checks whose triggers match the product.
+- [Stack preferences](references/stack-preferences.md): Read when choosing a new web stack or cloud provider.
+- [Application attack catalog](references/application-attack-catalog.md): Use for app, website, API, and game threat modeling. It lists 101 possible scenarios with prevention and response guidance. The catalog is illustrative and does not change the core or conditional check counts.
+
+Use current primary security guidance for the selected stack and threat model.

@@ -800,7 +800,7 @@
       "id": "securitymaxxing",
       "name": "Securitymaxxing",
       "category": "security",
-      "description": "Mandatory first-pass application-security guidance for software and digital-product work. It covers 70 core and 23 conditional checks, research-first use of maintained controls, autonomous authorized local review, and real access, production, and security-scope gates.",
+      "description": "Mandatory first-pass security guidance for software and digital-product work. Includes a 101-scenario app, website, API, and game threat catalog, 70 core and 23 conditional checks, research-first controls, and real access, production, and security-scope gates.",
       "installed_name": "securitymaxxing",
       "source_repository": null,
       "source_path": null,
