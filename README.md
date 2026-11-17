@@ -40,7 +40,7 @@ Ordered by common project workflow.
 
 ### Product and engineering
 
-- [Designmaxxing](skills/designmaxxing/SKILL.md): product-specific UI, accessibility, design research, and a mandatory personal-data baseline.
+- [Designmaxxing](skills/designmaxxing/SKILL.md): product-specific UI, accessibility, research, contextual motion guidance, and a mandatory personal-data baseline.
 - [Mobile Native](skills/mobile-native/SKILL.md): phone-specific behavior for websites, web apps, and PWAs, with real-device checks.
 - [Platform Architecture](skills/platform-architecture/SKILL.md): backend, data consistency, realtime, delivery, observability, and recovery choices.
 - [Securitymaxxing](skills/securitymaxxing/SKILL.md): the first-pass application-security baseline for software changes, with a researched attack catalog for apps, websites, APIs, and games.
