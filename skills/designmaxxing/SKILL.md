@@ -1,6 +1,6 @@
 ---
 name: designmaxxing
-description: First-pass UI/UX guidance for planning, specifying, reviewing, or changing user-facing design, interactions, usability, or accessibility across websites, apps, games, widgets, and design systems. Load before matching design specialists.
+description: First-pass UI/UX guidance for websites, apps, games, widgets, and design systems. Also routes privacy-policy drafting for digital products to a jurisdiction-matched legal template.
 ---
 
 # Designmaxxing
@@ -10,6 +10,7 @@ Use this skill when a task includes interface design. Apply it as a conditional 
 ## First-pass routing
 
 - Load this baseline after mandatory process skills and before design specialists when a task includes user-facing UI/UX work for a website, app, game, widget, component, prototype, or design system.
+- Load this skill whenever a privacy policy is requested or required for a website, app, game, SaaS, API, or other digital product, even when no UI design is in scope. Follow the privacy-policy workflow below.
 - For every software task, load securitymaxxing in the first pass, regardless of the requested feature or deliverable and whether security was explicitly requested. Load designmaxxing when user-facing UI/UX is in scope. When both apply, load both before specialists.
 - After the baseline or baselines, use only matching specialist skills from the active runtime catalog. Specialists add narrower platform, tool, accessibility, or design-system guidance.
 - When a user directly authorizes a build, treat design concepts and specialist reviews as internal quality checks. Do not require a second approval before reversible local implementation. Pause only for a user-requested review, an unresolved material choice, or a genuine authority boundary. Keep account access, paid use, consent, external publication, production changes, and destructive actions gated.
@@ -51,6 +52,15 @@ Use this skill when a task includes interface design. Apply it as a conditional 
 - Consult the living problem-solution catalog when available. Reuse defaults within their stated scope, record actual project use and outcome, and add new categories. Treat user examples as candidates until research selects them.
 - For a named product reference, review current official materials and normal user-visible behavior. Use reverse-engineer-anything when shipped behavior is important and permitted. Do not bypass access controls or terms or copy protected code, brand identity, or assets.
 - Search current project and user-provided assets before any production asset decision. Follow references/design-asset-sources.md for approved sources and reuse rights.
+
+## Privacy policy drafting
+
+Use this workflow when drafting or materially updating a privacy policy. It does not require creating a policy simply because a product exists.
+
+- **Required source:** Use the current [General-Legal/legal-templates](https://github.com/General-Legal/legal-templates) repository as the template source and record its current commit in the task notes. It is a CC0 template collection, not an Agent Skill package. Read the repository overview and both the overview and policy document in the matching [U.S.-only template directory](https://github.com/General-Legal/legal-templates/tree/main/templates/privacy-policy-us) or [GDPR-enhanced template directory](https://github.com/General-Legal/legal-templates/tree/main/templates/privacy-policy-gdpr). Do not run repository scripts.
+- **Template fit:** Use the repository's U.S.-only template only when its documented U.S. scope fits and GDPR-specific disclosures are not needed. Use the GDPR-enhanced template only when its documented U.S./EEA/UK coverage and its U.S.-company/no-EEA-or-UK-establishment assumption both fit. Do not force either template onto other or unclear jurisdictions; mark the draft incomplete until a matching legal source is selected.
+- **Verified facts:** Base disclosures on user-provided facts and authorized product sources. Do not invent data collection, uses, sharing, retention, analytics, AI training, children's data, transfers, rights, or contact details. Do not inspect secrets or live user records. Keep unknown fields unresolved and mark the draft incomplete until they are verified.
+- **Review and release:** Check current official requirements for the target markets. Keep the General Legal credit footnote when adapting the template, as requested by the repository; attribution is not a CC0 license requirement. A template is not legal advice or proof of compliance. Require qualified counsel review before publication and follow the existing external-publication gate.
 
 ## Choose a visual direction
 
