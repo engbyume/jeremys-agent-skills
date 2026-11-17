@@ -6,6 +6,7 @@ This source ledger records the provenance decisions for the public catalog. One-
 
 | Repository | Why it is included |
 | --- | --- |
+| [openai/plugins](https://github.com/openai/plugins) | Public source pinned to `82fd64bce3869f0d4c0bb2bf0e36a6e262ca5ad8`; 122 active skills are catalog-only links. GitHub reports no repository license metadata, so no upstream instructions are copied. |
 | [engbyume/progressive-codex-model-router](https://github.com/engbyume/progressive-codex-model-router) | Owner-published standalone public-safe Codex skill for cost-aware subagent routing, with the parent on GPT-6 Luna / max. |
 | [engbyume/background-skill-fixer](https://github.com/engbyume/background-skill-fixer) | Owner-published standalone public-safe skill for isolated root-cause repair of failed skills while the parent continues its authorized task. |
 | [obra/superpowers](https://github.com/obra/superpowers) | Present in the skills lockfile. |
@@ -72,10 +73,10 @@ These entries have no claimed upstream repository. The descriptions are public-s
 2. Check the local skills lockfile for GitHub sources that are not represented by a local repository.
 3. Keep public GitHub origins that could be verified, plus explicitly approved local skills with redacted entries.
 4. Categorize each skill by its primary job and write a short description from its installed metadata.
-5. Scan the final catalog for credentials, private prompts, machine paths, and excluded platform or service names.
+5. Scan the final catalog for credentials, private prompts, machine paths, and unapproved platform or service entries.
 6. Keep usage-saving process skills mandatory, route connector and specialized skills by task or condition, select one canonical source for duplicate manifests, and use a compact routing index instead of scanning every skill body.
 
-General agent capabilities such as browser automation, context compression, graph-based knowledge organization, and source inspection are retained because they are reusable agent workflows, not integrations for one hosted vendor. Service wrappers and platform-specific skills remain excluded even when their repositories are public.
+General agent capabilities such as browser automation, context compression, graph-based knowledge organization, and source inspection are retained because they are reusable agent workflows. Platform-specific and tool-specific skills are included only when they add useful coverage within the selected 200-record catalog and have a verified public source. The selected OpenAI plugin entries link to pinned upstream files and do not copy their instructions.
 
 ## Provenance notes
 
@@ -85,6 +86,7 @@ General agent capabilities such as browser automation, context compression, grap
 - 2026-11-14: Strengthened Designmaxxing, Securitymaxxing, and Platform Architecture with research-first capability planning, evidence-based reuse, current source checks, and justified custom implementation.
 - 2026-11-16: Reconciled quota and email approval guidance to active-task-only checks. Preserve the weekly 10%-remaining global stop, send 5%-remaining alerts only when an active task observes the threshold, process replies only in the matching active task, and do not use scheduled pollers.
 - 2026-11-16: Expanded Designmaxxing from the General-Legal policy-template route to a mandatory user-data baseline for products that collect personal data, with tracker consent, data rights, retention, subprocessors, transfer safeguards, security, and breach response.
+- 2026-11-17: Expanded the catalog to 200 records using 122 active, source-pinned OpenAI plugin entries across life-science research, Vercel, Cloudflare, Expo, Apple development, web development, and Canva. These entries link to upstream SKILL.md files without copying their instructions.
 - 2026-10-17: Added the pinned shadcn/ui source link. Its audited local adaptation is installed in Codex-compatible runtimes; third-party instructions are not copied into this library.
 
 - 2026-10-15: Added the Apache-2.0 NVIDIA Skillspector source and two public-safe intake skills. The local intake route now requires no-LLM scans and source review for every skill change.
@@ -107,8 +109,8 @@ The following are not cataloged:
 
 - **Aside skills:** bundled Aside resources and `aside-*` skills, per request.
 - **Unapproved local or private operating skills:** personal mentor, workspace, memory, and machine-operation instructions where no public GitHub origin was verified and no explicit redacted-entry approval exists.
-- **Tool or service-specific skills:** Anytype, Firecrawl, Higgsfield, Composio, Google Stitch, Unusual Whales, OfficeCLI, Scrapling, and other hosted-service or single-tool wrappers.
+- **Tool or service-specific skills outside the selected catalog:** Anytype, Firecrawl, Higgsfield, Composio, Google Stitch, Unusual Whales, OfficeCLI, Scrapling, and other unselected hosted-service wrappers. The selected OpenAI plugin entries are source-only links.
 - **Open Pencil:** excluded because it is a skill tightly coupled to the OpenPencil editor, despite having a public repository.
 - **Unverified local skills:** skills with no GitHub remote, lockfile entry, or explicit upstream repository metadata.
 
-The policy favors omission over guessing. If a future install records a clear public GitHub source and the skill is general-purpose, add it with a short description and provenance note.
+Future entries need a verified public source and exact skill path. Record whether each entry links upstream or includes an approved package. Keep unselected inventory entries outside this 200-record catalog unless Jeremy changes the scope.
