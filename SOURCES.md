@@ -21,7 +21,7 @@ This catalog was refreshed from the installed skill directories, plugin metadata
 | [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | GitHub source verified from the installed skill documentation. |
 | [Nanako0129/sepia](https://github.com/Nanako0129/sepia) | Scoped `skills/sepia` package installed after static audit; repository-level CI workflow quarantined. |
 
-| [engbyume/progressive-codex-model-router](https://github.com/engbyume/progressive-codex-model-router) | Public standalone Codex skill v0.5.3. Parent: GPT-6 Luna / max; routine subagent work from small through high: GPT-6.1 Terra / low; computer-use subagents: GPT-6 Luna / max; nonroutine consequential review or coordination: Luna / max when warranted; hard or high-risk child: GPT-6.2 Sol / medium; ultra-complex child: GPT-6.2 Sol / high only under 10 minutes, medium otherwise. Snapshot commit `b23e1266b50bb29a154c07f5f18b476e02e133ac` (2026-11-18). |
+| [engbyume/progressive-codex-model-router](https://github.com/engbyume/progressive-codex-model-router) | Public standalone Codex skill v0.5.4. Parent: GPT-6 Luna / max; routine subagent work from small through high, including non-computer agentic work: GPT-6.1 Terra / low; computer-use subagents: GPT-6 Luna / max; nonroutine consequential review or coordination: Luna / max when warranted; hard or high-risk child: GPT-6.2 Sol / medium; ultra-complex child: GPT-6.2 Sol / high only under 10 minutes, medium otherwise. Snapshot commit `f5d90eb4d49e822de326146c83d163954dd33472` (2026-11-18). |
 
 ## Methodology
 
