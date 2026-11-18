@@ -532,12 +532,12 @@
       "id": "progressive-codex-model-router",
       "name": "Progressive Codex Model Router",
       "category": "agent-efficiency",
-      "description": "Routes Codex subagents to the lowest-cost eligible model and effort, keeping the parent on GPT-6 Luna / max and using GPT-6.2 Sol for hard or ultra-complex eligible work.",
+      "description": "Routes Codex subagents to the lowest-cost eligible model and effort. The parent stays on GPT-6.1 Terra / low (Terra Light); hard and ultra-complex child work uses GPT-6.2 Sol.",
       "installed_name": "progressive-codex-model-router",
       "source_repository": "https://github.com/engbyume/progressive-codex-model-router",
       "source_path": "SKILL.md",
       "provenance": "Owner-authored public standalone skill; linked to its public repository without copying local runtime scripts or private paths.",
-      "source_snapshot": "d3dfd31f32fe6583992ad96ace2f1ed6c9bf69d0"
+      "source_snapshot": "c33ef85c6ac5b4b2189a18aea354c1acddaf397a"
     },
     {
       "id": "sepia",
