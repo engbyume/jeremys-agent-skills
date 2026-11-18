@@ -21,6 +21,8 @@ This catalog was refreshed from the installed skill directories, plugin metadata
 | [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | GitHub source verified from the installed skill documentation. |
 | [Nanako0129/sepia](https://github.com/Nanako0129/sepia) | Scoped `skills/sepia` package installed after static audit; repository-level CI workflow quarantined. |
 
+| [engbyume/progressive-codex-model-router](https://github.com/engbyume/progressive-codex-model-router) | Owner-authored standalone Codex skill. The parent stays on GPT-6.1 Terra / low; all other model routes are subagent-only, including GPT-6.2 Sol for complex child work. Updated to version 0.5.2 at commit `c33ef85`. |
+
 ## Methodology
 
 1. Enumerate installed skill directories and resolve their Git repositories.
