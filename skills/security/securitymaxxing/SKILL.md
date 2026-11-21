@@ -1,6 +1,6 @@
 ---
 name: securitymaxxing
-description: Mandatory first-pass security baseline for every software or digital-product task, whether or not security is requested, including UI-only work. Includes a defensive app, website, API, and game attack catalog, mandatory AiSOC applicability, 70 core checks, and triggered conditional checks.
+description: Mandatory first-pass security baseline for every software or digital-product task, including privacy, deletion, authorization, provider budgets, licensing, trademark checks, and UI-only work. Includes a defensive app, website, API, and game attack catalog, mandatory AiSOC applicability, 70 core checks, and triggered conditional checks.
 ---
 
 # Securitymaxxing
@@ -70,6 +70,7 @@ Apply the active project instructions and the user's current request. This skill
 
 - [Application security checks](references/application-security-checks.md): Evaluate the 70 core checks against the product architecture and threat model.
 - [Conditional platform and lifecycle checks](references/conditional-platform-security-checks.md): Evaluate the 23 checks whose triggers match the product.
+- [Product data and release controls](references/product-data-and-release-controls.md): Apply product standards for code-based privacy policies, minimized collection, access and deletion, children, ads and tracking, cancellation, secrets, AI budgets, trademarks, and licenses. These standards do not change the 70 core or 23 conditional check counts.
 - [Stack preferences](references/stack-preferences.md): Read when choosing a new web stack or cloud provider.
 - [Application attack catalog](references/application-attack-catalog.md): Use for app, website, API, and game threat modeling. It lists 101 possible scenarios with prevention and response guidance. The catalog is illustrative and does not change the core or conditional check counts.
 

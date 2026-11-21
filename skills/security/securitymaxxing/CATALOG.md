@@ -2,7 +2,7 @@
 
 **Category:** [Security](../README.md)
 
-Mandatory first-pass security guidance for software and digital-product work. Includes a 101-scenario app, website, API, and game threat catalog, 70 core and 23 conditional checks, research-first controls, and real access, production, and security-scope gates.
+Mandatory first-pass security guidance for software and digital-product work. Includes privacy, data minimization and deletion, authorization, AI provider budgets, trademark and license review, a 101-scenario app, website, API, and game threat catalog, and 70 core and 23 conditional checks.
 
 **Activation:** Mandatory when the prompt matches
 **When:** Load whenever the request matches this skill's stated trigger.
