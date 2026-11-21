@@ -152,7 +152,7 @@ Use [NIST SP 800-61 Rev. 3](https://csrc.nist.gov/pubs/sp/800/61/r3/final) as in
 
 ## Research sources
 
-The catalog was reviewed and expanded on 2026-11-20. These sources ground the scenarios and controls; recheck the applicable version and provider guidance when implementing.
+The catalog was reviewed and expanded on 2026-11-21. These sources ground the scenarios and controls; recheck the applicable version and provider guidance when implementing.
 
 ### Application, API, and identity
 
