@@ -549,6 +549,17 @@
       "source_path": "skills/sepia",
       "provenance": "scoped static audit; repository-level workflow quarantined",
       "source_snapshot": "d8a0f948cc46a0ba0d610df7458c4e8943bfe51a"
+    },
+    {
+      "id": "session-skill-audit",
+      "name": "Session Skill Audit",
+      "category": "agent-efficiency",
+      "description": "Audits agent sessions from local transcripts to identify evidence-backed root causes and minimal skill or instruction improvements.",
+      "installed_name": "session-skill-audit",
+      "source_repository": "https://github.com/aiwithremy/session-skill-audit",
+      "source_path": "session-skill-audit/SKILL.md",
+      "provenance": "Upstream public source; catalog metadata only. No LICENSE file was present at the reviewed commit; source content is not copied into this catalog.",
+      "source_snapshot": "eb189768e88a773cdc4d57402b923cc14e11fa8f"
     }
   ]
 }
