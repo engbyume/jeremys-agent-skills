@@ -835,7 +835,7 @@
       "name": "Designmaxxing",
       "category": "design",
       "activation": "mandatory-on-match",
-      "description": "Portable UI design guidance for websites, apps, games, widgets, and design systems, including Agent Desktop as the first computer-use route, Awwwards MCP research, contextual design-slop, premium and motion cues, and distinctive website design. Requires a personal-data baseline for consent, trackers, rights, retention, subprocessors, transfers, security, and breaches, and routes product-specific policies through scope-matched General-Legal CC0 templates. For mobile web, load the first-party mobile-native skill for phone-specific CSS, viewport, touch, safe-area, keyboard, accessibility, performance, and real-device checks.",
+      "description": "First-party visual-design guidance for websites, apps, game UI, widgets, and other visual products. Applies principles by platform, routes 3D scenes to engine-specific skills, and includes Agent Desktop, Awwwards MCP research, accessibility, privacy, and conditional Lenis, GSAP, and Vanta tooling guidance.",
       "installed_name": "designmaxxing",
       "source_repository": null,
       "source_path": null,

@@ -1,6 +1,6 @@
 ---
 name: designmaxxing
-description: First-pass UI/UX guidance for websites, apps, games, widgets, and design systems. Also routes personal-data collection and privacy-policy work through mandatory safeguards and routes mobile web/PWA work to mobile-native for viewport, touch, safe-area, and device checks.
+description: First-pass visual guidance for websites, apps, game UI, widgets, dashboards, prototypes, and other visual products. Applies platform-specific rules contextually, routes 3D scene work to engine-specific guidance, and directs conditional Lenis, GSAP, and Vanta use. Also routes personal-data collection through mandatory safeguards and mobile web/PWA work to mobile-native.
 ---
 
 # Designmaxxing
@@ -11,6 +11,10 @@ description: First-pass UI/UX guidance for websites, apps, games, widgets, and d
 **Trigger:** Use when UI/UX is in scope or a product will collect, infer, store, share, or track personal data. Apply the required baseline before implementation.
 
 Use this skill when a task includes interface design. Apply it as a conditional design guide, not as one visual style or a universal checklist. Its design and feature ideas are highly encouraged when they fit the product, but do not implement the full enhancement catalog by default.
+
+## Visual scope across products
+
+Apply Designmaxxing's visual guidance to user-facing websites, apps, game UI, widgets, dashboards, prototypes, and other visual products when it fits. Adapt it to the platform, renderer, input, audience, and accessibility needs. Do not apply web layout, CSS, DOM scrolling, or browser assumptions to 3D game worlds, 3D art, VR/AR scenes, or engine-rendered environments. Use the matching 3D or game-engine skills there; Designmaxxing still applies to menus, HUDs, overlays, and other interface surfaces.
 
 ## First-pass routing
 
@@ -90,6 +94,7 @@ A product that collects or processes personal data must have a product-specific 
 - Choose typography, icons, color, density, surface, corner shape, motion, and layout to fit the brief, brand, platform, content, accessibility needs, and existing components.
 - Do not impose a default font, icon set, palette, corner style, animation, or design system across products. When design references conflict, follow the current user direction and active project specification.
 - When intentional motion is in scope or the user supplies animation references, read [motion principles](references/motion-principles.md). Use the cues contextually and recreate an original, product-specific interaction.
+- When selecting smooth browser scrolling, complex JavaScript motion, or animated backgrounds, read [animation tooling](references/animation-tooling.md). Follow its Lenis, GSAP, and Vanta scope, accessibility, performance, licensing, and lifecycle checks.
 - For every new website, app, game, or major UI direction, read [references/design-asset-sources.md](references/design-asset-sources.md). It lists the approved asset sources, the no-generated-production-assets rule, and the required research-before-mockup workflow.
 - When web implementation or hosting choices are part of the design task, read [stack preferences](references/stack-preferences.md). Apply those defaults only to new or unconstrained web work; preserve existing stacks and native or game platform requirements.
 - Do not generate or hand-create production design assets such as logos, illustrations, photos, icon sets, textures, decorative graphics, sprites, or 3D art. Reuse current project or user-provided assets, or source licensed assets from the approved set. You may implement layouts and ordinary UI components in code. A concept mockup is allowed when it is clearly labeled and grounded in research; do not ship its placeholder or generated artwork as an asset. A later explicit user request can override this restriction.

@@ -36,6 +36,7 @@ The approved source set consists of user-provided project assets, an existing us
 - If a required production asset is missing from the approved set, use a non-decorative layout or platform primitive, or ask the user to provide an asset or approve another source. Do not invent a new asset.
 - A curated gallery is not a reuse license. Check the original asset's provenance, license, attribution, and commercial-use limits before importing it.
 - A clear, current user request can override this rule for a specific asset.
+- User-directed Vanta backgrounds are a narrow implementation-library exception, not an asset-source expansion. Use the runtime effect only under [animation tooling](animation-tooling.md), preserve its license and notices if copying code, and do not republish demo artwork or site branding.
 
 ## Research before design
 
