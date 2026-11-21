@@ -23,6 +23,7 @@ This catalog was refreshed from the installed skill directories, plugin metadata
 
 | [engbyume/progressive-codex-model-router](https://github.com/engbyume/progressive-codex-model-router) | Public standalone Codex skill v0.5.4. Parent: GPT-6 Luna / max; routine subagent work from small through high, including non-computer agentic work: GPT-6.1 Terra / low; computer-use subagents: GPT-6 Luna / max; nonroutine consequential review or coordination: Luna / max when warranted; hard or high-risk child: GPT-6.2 Sol / medium; ultra-complex child: GPT-6.2 Sol / high only under 10 minutes, medium otherwise. Snapshot commit `f5d90eb4d49e822de326146c83d163954dd33472` (2026-11-18). |
 
+| [aiwithremy/session-skill-audit](https://github.com/aiwithremy/session-skill-audit) | Upstream session-audit skill at commit `eb189768e88a773cdc4d57402b923cc14e11fa8f`. No LICENSE file was present; this catalog stores only a source link and metadata, not source files. |
 ## Methodology
 
 1. Enumerate installed skill directories and resolve their Git repositories.
