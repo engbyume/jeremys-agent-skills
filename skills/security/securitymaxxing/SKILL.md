@@ -1,6 +1,6 @@
 ---
 name: securitymaxxing
-description: Mandatory first-pass security baseline for every software or digital-product task, including privacy, deletion, authorization, provider budgets, licensing, trademark checks, and UI-only work. Includes a defensive app, website, API, and game attack catalog, mandatory AiSOC applicability, 70 core checks, and triggered conditional checks.
+description: Mandatory first-pass security baseline for every software or digital-product task, including project lifecycle scanners, privacy, deletion, authorization, provider budgets, licensing, trademark checks, and UI-only work. Includes a defensive app, website, API, and game attack catalog, mandatory AiSOC applicability, 70 core checks, and triggered conditional checks.
 ---
 
 # Securitymaxxing
@@ -23,8 +23,9 @@ Run authorized repository research, static checks, and reversible local repairs 
 - Defensive code review: security-review, as required in the pre-build workflow below.
 - Phase-specific review: codex-security:threat-model, codex-security:finding-discovery, codex-security:attack-path-analysis, codex-security:validation, and codex-security:fix-finding when the task enters the matching phase.
 - Stack-specific guidance: read references/stack-preferences.md when choosing a new web stack or cloud provider, then use the matching skill for the selected or existing stack. Load Supabase guidance only when the project already uses it or the user explicitly asks for it.
-- Full security scans: use security-scan or codex-security:security-scan only when the user requests a full security scan.
-- Authorized adversarial testing: strix-web-security, redteam-hunting, mantishack, and tamper-fuzzing only for an owned or explicitly authorized target with a defined scope. Do not invoke these automatically.
+- Project lifecycle audits: use Cloudflare's security-audit skill, Trivy, and TruffleHog at project setup and after implementation, as defined in references/security-tooling.md. Activate Cloudflare's skill only after complete source and security review. If it is unavailable or its scan is incomplete, mark that audit phase incomplete and do not claim it ran.
+- Authorized dynamic testing: use Strix as the required default assessment for a runnable, in-scope website, web app, or API on local or staging, subject to target, sandbox, and paid-provider gates. Do not test production or third-party targets without explicit current-task authorization. Redteam-hunting, mantishack, and tamper-fuzzing remain opt-in for separately scoped security work.
+- Additional full security scans: use security-scan or codex-security:security-scan when the user requests them or the project scope needs coverage beyond the mandatory project-tool baseline.
 - Architecture guidance: load platform-architecture when distributed-system, deployment, scaling, or recovery decisions are in scope; keep this skill's security checks authoritative for security controls.
 - Use only skills available in the active runtime. A skill reference does not grant access to a tool, service, target, or account.
 
@@ -55,13 +56,14 @@ Apply the active project instructions and the user's current request. This skill
 
 1. Identify the product, target platform, architecture, deployment model, audience, and applicable threat model. Read references/stack-preferences.md when choosing technologies or hosting for new web work. Distinguish websites, APIs, native apps, games, browser clients, backend services, AI features, and third-party integrations. Preserve an established stack unless the user requests a change or evidence shows it does not fit.
 2. Map the data and trust boundaries relevant to the change: sensitive data and secrets, authentication and authorization, sessions, APIs, user input, uploads and file access, outbound requests, payments, webhooks, databases, cloud configuration, CI/CD, dependencies, tenants, AI prompts and tools, logs, backups, and production environments.
-3. Read the project's active security instructions and use the installed `security-review` skill. Read `references/application-security-checks.md` and evaluate all 70 core checks against the actual architecture and threat model. Read `references/conditional-platform-security-checks.md` and evaluate each of the 23 conditional checks whose platform or lifecycle trigger applies. When a task affects personal data, privacy disclosures, user-data deletion, children, ads or tracking, subscriptions, AI-provider costs, product or domain names, or third-party code or assets, also read and apply `references/product-data-and-release-controls.md`.
+3. Read the project's active security instructions and use the installed `security-review` skill. Read `references/application-security-checks.md` and evaluate all 70 core checks against the actual architecture and threat model. Read `references/conditional-platform-security-checks.md` and evaluate each of the 23 conditional checks whose platform or lifecycle trigger applies. Read and apply `references/security-tooling.md` for every new or materially changed software project. When a task affects personal data, privacy disclosures, user-data deletion, children, ads or tracking, subscriptions, AI-provider costs, product or domain names, or third-party code or assets, also read and apply `references/product-data-and-release-controls.md`.
 4. For each applicable risk, define the control and a concrete way to verify it before implementation. For every check marked not applicable, record an architecture-specific reason. Do not treat a missing feature as a vulnerability by default, and do not let conditional checks disappear when the related feature exists.
 
 ## After building or changing software
 
 - Run the relevant security checks and tests for the changed code. Recheck every applicable item among the 70 core checks and 23 conditional checks, including dependencies, build workflows, cloud configuration, and deployed settings when they are in scope.
 - Use the appropriate static analysis, secret and dependency scanning, permissions review, browser security tests, backup and restore checks, audit and monitoring checks, and other targeted validation supported by the project.
+- Complete the start and post-implementation checks in `references/security-tooling.md`. Record tool versions, target scope, findings, and not-applicable reasons. If a required tool is unavailable, blocked, or incomplete, keep that phase open and do not report the security baseline as complete.
 - Restrict dynamic security testing to a target the user owns or has explicitly authorized. Prefer local or staging targets. Do not test public production or third-party systems without explicit current-task authorization and a defined scope.
 - Fix confirmed findings within the authorized task, then rerun the checks that failed. Record the check, result, evidence, and checks that could not run or were out of scope.
 - State limits clearly. A clean checklist or automated scan is not proof that software is secure.
@@ -70,6 +72,7 @@ Apply the active project instructions and the user's current request. This skill
 
 - [Application security checks](references/application-security-checks.md): Evaluate the 70 core checks against the product architecture and threat model.
 - [Conditional platform and lifecycle checks](references/conditional-platform-security-checks.md): Evaluate the 23 checks whose triggers match the product.
+- [Security tooling lifecycle](references/security-tooling.md): Cloudflare, Trivy, and TruffleHog are required at project setup and after implementation. Strix, ClamAV, and PyRIT are required when their exact conditions fit. BLA remains optional and must not be used for open-source source trees.
 - [Product data and release controls](references/product-data-and-release-controls.md): Apply product standards for code-based privacy policies, minimized collection, access and deletion, children, ads and tracking, cancellation, secrets, AI budgets, trademarks, and licenses. These standards do not change the 70 core or 23 conditional check counts.
 - [Stack preferences](references/stack-preferences.md): Read when choosing a new web stack or cloud provider.
 - [Application attack catalog](references/application-attack-catalog.md): Use for app, website, API, and game threat modeling. It lists 101 possible scenarios with prevention and response guidance. The catalog is illustrative and does not change the core or conditional check counts.

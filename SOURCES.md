@@ -32,6 +32,7 @@ This source ledger records the provenance decisions for the public catalog. One-
 | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | Existing local skill passed static audit and is mandatory for simplicity and YAGNI decisions. |
 | [headroomlabs-ai/headroom](https://github.com/headroomlabs-ai/headroom) | Official Headroom source installed as a local compression tool; use it as a mutually exclusive alternative to Lean CTX and RTK. |
 | [rtk-ai/rtk](https://github.com/rtk-ai/rtk) | Official Rust Token Killer source built and installed as a command-output optimizer; bundled agent skills were not installed. |
+| [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill) | User-requested MIT coding-agent audit skill pinned to c1c8a8c1471069fb0e188eeaff69b8e8db6564a8. Skillspector 2.13.4 left four validator files partially inspected, so this is catalog-only and inactive until complete source coverage is restored. No upstream instructions are copied. |
 
 | [apify/agent-skills](https://github.com/apify/agent-skills) | Official Apify-maintained scraper skill installed from skills/apify-ultimate-scraper at audited commit d522584df6d01746d76b0c674f375cc7d48a838f; local safeguards cover login, tokens, target authorization, and billable runs. |
 | [rebelytics/one-skill-to-rule-them-all](https://github.com/rebelytics/one-skill-to-rule-them-all) | Audited at commit `56e890712273ce231b478adc56ee2eb81101c3d6`; its Task Observer workflow informed a Codex-native, hook-free package for prompt-start, material-change, and end audits. The adaptation now checks goal continuity through retries and fallback. Added 2026-10-14 after public-safety review. |
@@ -46,6 +47,12 @@ This source ledger records the provenance decisions for the public catalog. One-
 | [darkroomengineering/lenis](https://github.com/darkroomengineering/lenis) | User-requested MIT implementation source for intentional smooth scrolling on browser DOM surfaces. It wraps native scrolling and its current README keeps reduced-motion behavior enabled by default. Use only when smooth scrolling fits the product and verify anchors and nested scroll. |
 | [greensock/GSAP](https://github.com/greensock/GSAP) | User-requested source for complex JavaScript animation and ScrollTrigger on compatible surfaces. Its current README says commercial use is free; verify current terms, framework support, and cleanup guidance when implementing. |
 | [tengbao/vanta](https://github.com/tengbao/vanta) | User-requested optional source for animated browser backgrounds using Three.js/WebGL or p5. MIT licensed. GitHub reported its last push as 2024-03-03 at the 2026-11-20 review, so verify maintenance, dependencies, and performance before using it in production. |
+| [usestrix/strix](https://github.com/usestrix/strix) | Required default dynamic assessment for runnable, owned or explicitly authorized web apps on local or staging when scope, sandbox, Docker, and paid LLM gates are satisfied. Apache-2.0. |
+| [aquasecurity/trivy](https://github.com/aquasecurity/trivy) | Required project-start and pre-release scans for repositories, IaC, and built images. Explicitly enable misconfiguration and license scanners; full license scanning is for release review. Apache-2.0. |
+| [trufflesecurity/trufflehog](https://github.com/trufflesecurity/trufflehog) | Required project-start and pre-release local filesystem and Git-history secret scans. Verification stays off by default; external account and cloud scans need explicit scope. AGPL-3.0. |
+| [Cisco-Talos/clamav](https://github.com/Cisco-Talos/clamav) | Required malware scanning when products process untrusted file uploads or email attachments. Quarantine detections, keep signatures fresh, avoid automatic deletion, and keep unauthenticated TCP sockets private. GPL-2.0. |
+| [microsoft/PyRIT](https://github.com/microsoft/PyRIT) | Required security and safety evaluation for products with generative-AI features. Use synthetic inputs and authorized local or staging targets. MIT. |
+| [qybaihe/bla](https://github.com/qybaihe/bla) | Reviewed as an optional defense-in-depth candidate for proprietary release artifacts only. It does not hide public open-source code or guarantee resistance to human or other tool analysis; never make it a universal requirement. MIT. |
 
 ## Explicitly approved local entries
 
@@ -63,7 +70,7 @@ These entries have no claimed upstream repository. The descriptions are public-s
 | Codex Email Approval Gateway | Public-safe first-party skill for once-per-reset 5% quota alerts observed inside an active task and verified same-thread approval replies relayed to the matching Codex task. It uses no scheduled poller and preserves native permission gates. |
 | Designmaxxing | First-party visual-design guidance for websites, apps, game UI, widgets, and other visual products. It adapts principles to platform, routes 3D scenes to engine-specific skills, and includes Agent Desktop, Awwwards MCP, accessibility, privacy, and conditional Lenis, GSAP, and Vanta tooling. Product-specific policies use scope-matched [General-Legal/legal-templates](https://github.com/General-Legal/legal-templates) templates. Updated 2026-11-20. |
 | Mobile Native | Explicitly approved first-party, portable, web-only guidance for mobile websites, web apps, and PWAs. Covers viewport, inputs, touch, scrolling, safe areas, keyboard behavior, mobile performance, and real-device verification. Does not apply to React Native. |
-| Securitymaxxing | First-party application-security skill with 70 core and 23 conditional checks, plus a 101-scenario defensive threat catalog for apps, websites, APIs, and games. The catalog gives prevention and response guidance and stays architecture-dependent. Updated 2026-11-17. |
+| Securitymaxxing | First-party application-security skill with 70 core and 23 conditional checks, mandatory project lifecycle scans, and a 101-scenario defensive threat catalog for apps, websites, APIs, and games. The catalog gives prevention and response guidance and stays architecture-dependent. Updated 2026-11-20. |
 | Platform Architecture | First-party conditional guidance for backend, distributed systems, push-based realtime updates, data consistency, delivery, observability, recovery, and public-product service selection; routes detailed work to existing specialists. Added 2026-10-17. |
 | Agent-Managed CI/CD | Public-safe first-party release workflow with deployment patterns, health checks, rollback, and explicit release gates. Added 2026-10-17. |
 | Skill Inspector | Public-safe Apache-2.0 adaptation for mandatory Skillspector intake scanning, coverage review, source triage, and source-confirmed malware removal. |
@@ -79,7 +86,7 @@ These entries have no claimed upstream repository. The descriptions are public-s
 5. Scan the final catalog for credentials, private prompts, machine paths, and unapproved platform or service entries.
 6. Keep usage-saving process skills mandatory, route connector and specialized skills by task or condition, select one canonical source for duplicate manifests, and use a compact routing index instead of scanning every skill body.
 
-General agent capabilities such as browser automation, context compression, graph-based knowledge organization, and source inspection are retained because they are reusable agent workflows. Platform-specific and tool-specific skills are included only when they add useful coverage within the selected 200-record catalog and have a verified public source. The selected OpenAI plugin entries link to pinned upstream files and do not copy their instructions.
+General agent capabilities such as browser automation, context compression, graph-based knowledge organization, and source inspection are retained because they are reusable agent workflows. Platform-specific and tool-specific skills are included only when they add useful coverage within the selected 201-record catalog and have a verified public source. The selected OpenAI plugin entries link to pinned upstream files and do not copy their instructions.
 
 ## Provenance notes
 
@@ -91,13 +98,14 @@ General agent capabilities such as browser automation, context compression, grap
 - 2026-11-16: Expanded Designmaxxing from the General-Legal policy-template route to a mandatory user-data baseline for products that collect personal data, with tracker consent, data rights, retention, subprocessors, transfer safeguards, security, and breach response.
 - 2026-11-20: Added platform-aware visual scope and conditional Lenis, GSAP, and Vanta guidance to Designmaxxing. Lenis and Vanta are MIT licensed; the current GSAP README says commercial use is free. Vanta was last pushed in 2024, so the skill requires a current maintenance, compatibility, and performance check before use.
 - 2026-11-20: Reinforced Securitymaxxing and aligned Designmaxxing with code-derived privacy policies, complete third-party disclosure, data minimization and deletion, server-side authorization, child safeguards, no ads or tracking by default, simple subscription cancellation, AI spend caps, trademark clearance, and license compatibility review.
+- 2026-11-20: Added mandatory project-start and post-implementation checks with Trivy, TruffleHog, and Cloudflare's security-audit workflow. Strix is the required default for eligible runnable web targets; ClamAV applies to untrusted file intake and PyRIT to generative-AI features. BLA remains optional because it cannot hide public source and can impair review. The Cloudflare skill stays catalog-only because its pinned source scan is incomplete.
 - 2026-11-17: Expanded the catalog to 200 records using 122 active, source-pinned OpenAI plugin entries across life-science research, Vercel, Cloudflare, Expo, Apple development, web development, and Canva. These entries link to upstream SKILL.md files without copying their instructions.
 - 2026-10-17: Added the pinned shadcn/ui source link. Its audited local adaptation is installed in Codex-compatible runtimes; third-party instructions are not copied into this library.
 
 - 2026-10-15: Added the Apache-2.0 NVIDIA Skillspector source and two public-safe intake skills. The local intake route now requires no-LLM scans and source review for every skill change.
 - 2026-10-12: Added a portable autonomy and hook-free fallback check for active skills, including routine authorized work, genuine action boundaries, and complete inventory audits.
 
-- Repository links identify source repositories. This catalog links to those sources and does not imply that it created a copy or fork.
+- Repository links identify source repositories. This catalog links to those sources and does not imply that it created a copy or fork. The current catalog has 201 records after the owner-requested Cloudflare security-audit entry was added.
 - On September 28, 2026, redacted local agent instructions were clarified to separate
   user authorization from goal-state evidence, avoid repeated continuation prompts,
   checkpoint at first-compaction thresholds, and avoid guessing active model identity.
@@ -118,4 +126,4 @@ The following are not cataloged:
 - **Open Pencil:** excluded because it is a skill tightly coupled to the OpenPencil editor, despite having a public repository.
 - **Unverified local skills:** skills with no GitHub remote, lockfile entry, or explicit upstream repository metadata.
 
-Future entries need a verified public source and exact skill path. Record whether each entry links upstream or includes an approved package. Keep unselected inventory entries outside this 200-record catalog unless Jeremy changes the scope.
+Future entries need a verified public source and exact skill path. Record whether each entry links upstream or includes an approved package. Keep unselected inventory entries outside the current 201-record catalog unless Jeremy changes the scope.

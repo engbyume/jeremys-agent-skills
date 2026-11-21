@@ -2,7 +2,7 @@
 
 Portable, public-safe skill packages for agents that design, build, secure, and maintain software.
 
-**11 installable packages** · **200 catalog records** · **10 categories**
+**11 installable packages** · **201 catalog records** · **10 categories**
 
 [Browse by category](#browse-by-category) · [Installable packages](#first-party-packages) · [Full catalog](skills.json) · [Sources and provenance](SOURCES.md)
 
@@ -40,7 +40,7 @@ Each record has an `activation` label in `skills.json` and its `CATALOG.md` card
 | Label | Meaning | Current entries |
 | --- | --- | ---: |
 | **Always mandatory** | Load on every prompt under this library's current defaults. | 6 |
-| **Mandatory when the prompt matches** | Load when the task trigger in the skill description matches. | 152 |
+| **Mandatory when the prompt matches** | Load when the task trigger in the skill description matches. | 153 |
 | **Optional when the prompt matches** | Use when requested or when agent judgment says it materially helps. | 42 |
 
 <details><summary>Always mandatory (6)</summary>
@@ -50,7 +50,7 @@ Each record has an `activation` label in `skills.json` and its `CATALOG.md` card
 
 </details>
 
-<details><summary>Mandatory when the prompt matches (152)</summary>
+<details><summary>Mandatory when the prompt matches (153)</summary>
 
 `agent-desktop`, `agent-desktop-macos`, `agent-managed-cicd`, `background-skill-fixer`, `brainstorming`
 `build-ios-apps-ios-app-intents`, `build-ios-apps-ios-debugger-agent`
@@ -66,7 +66,7 @@ Each record has an `activation` label in `skills.json` and its `CATALOG.md` card
 `build-web-apps-supabase-best-practices`, `canva-canva-branded-presentation`
 `canva-canva-resize-for-all-social-media`, `canva-canva-translate-design`, `cloudflare-agents-sdk`
 `cloudflare-building-ai-agent-on-cloudflare`, `cloudflare-building-mcp-server-on-cloudflare`
-`cloudflare-cloudflare`, `cloudflare-durable-objects`, `cloudflare-sandbox-sdk`, `cloudflare-web-perf`
+`cloudflare-cloudflare`, `cloudflare-durable-objects`, `cloudflare-sandbox-sdk`, `cloudflare-security-audit`, `cloudflare-web-perf`
 `cloudflare-workers-best-practices`, `cloudflare-wrangler`, `codex-email-approval-gateway`
 `codex-usage-fallback-router`, `composio-cli`, `designmaxxing`, `docx`, `expo-building-native-ui`
 `expo-codex-expo-run-actions`, `expo-expo-api-routes`, `expo-expo-cicd-workflows`, `expo-expo-deployment`
@@ -133,10 +133,10 @@ Ordered by common project workflow.
 
 ### Product and engineering
 
-- [Designmaxxing](skills/design/designmaxxing/SKILL.md): platform-aware visual guidance for websites, apps, and game UI, with code-derived privacy policies, complete third-party disclosure, deletion and consent controls, no ads or tracking by default, accessibility, and conditional Lenis, GSAP, and Vanta tooling.
+- [Designmaxxing](skills/design/designmaxxing/SKILL.md): platform-aware visual guidance for websites, apps, and game UI, with code-derived privacy policies, complete third-party disclosure, no ads or tracking by default, and scoped Strix assessment for runnable web apps.
 - [Mobile Native](skills/design/mobile-native/SKILL.md): phone-specific behavior for websites, web apps, and PWAs, with real-device checks.
 - [Platform Architecture](skills/development/platform-architecture/SKILL.md): backend, data consistency, realtime, delivery, observability, and recovery choices.
-- [Securitymaxxing](skills/security/securitymaxxing/SKILL.md): the first-pass security baseline for software and digital products, with a researched attack catalog, privacy and deletion controls, server-side authorization, AI spend caps, trademark checks, and license review.
+- [Securitymaxxing](skills/security/securitymaxxing/SKILL.md): the first-pass security baseline for software and digital products, with lifecycle scanning, a researched attack catalog, privacy and deletion controls, server-side authorization, AI spend caps, trademark checks, and license review.
 
 ### Skill trust and recovery
 
@@ -153,7 +153,7 @@ Ordered by common project workflow.
 
 ## Full catalog and provenance
 
-The [200-entry catalog](skills.json) records short descriptions, simplified categories, activation labels, and source metadata. Each record has a category folder and `CATALOG.md` card; the 11 installable packages also include `SKILL.md`. Upstream skill bodies stay with their authors. See [SOURCES.md](SOURCES.md) for provenance.
+The [201-entry catalog](skills.json) records short descriptions, simplified categories, activation labels, and source metadata. Each record has a category folder and `CATALOG.md` card; the 11 installable packages also include `SKILL.md`. Upstream skill bodies stay with their authors. See [SOURCES.md](SOURCES.md) for provenance.
 
 ## Public-safety rules
 
