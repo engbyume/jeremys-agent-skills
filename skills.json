@@ -691,7 +691,7 @@
       "name": "Autonomous Skill Routing",
       "category": "agents",
       "activation": "always-mandatory",
-      "description": "Uses a compact routing index to select the smallest complete skill set. Applies safe defaults without repeat approval for authorized work, preserves real action gates, and keeps the same goal active through failures and fallbacks.",
+      "description": "Uses a machine-readable routing policy to select the smallest matching skill set and a generated source index to check current availability. Separates routing from authorization, preserves real action gates, and keeps the same goal active through safe retries and fallbacks.",
       "installed_name": "autonomous-skill-routing",
       "source_repository": null,
       "source_path": null,

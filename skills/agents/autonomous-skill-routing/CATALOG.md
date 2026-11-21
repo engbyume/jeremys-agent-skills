@@ -2,7 +2,7 @@
 
 **Category:** [Agents](../README.md)
 
-Uses a compact routing index to select the smallest complete skill set. Applies safe defaults without repeat approval for authorized work, preserves real action gates, and keeps the same goal active through failures and fallbacks.
+Uses a machine-readable routing policy to select the smallest matching skill set and a generated source index to check current availability. Separates routing from authorization, preserves real action gates, and keeps the same goal active through safe retries and fallbacks.
 
 **Activation:** Always mandatory
 **When:** Use on every prompt. If a required connection or tool is unavailable, follow the fallback in the skill.
