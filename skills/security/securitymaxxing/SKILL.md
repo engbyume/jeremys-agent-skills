@@ -18,6 +18,12 @@ This baseline is mandatory for every software or digital-product creation, chang
 
 Run authorized repository research, static checks, and reversible local repairs without redundant approval prompts. Continue baseline checks while a separate access or scope gate is pending. Gate only actions that need real authorization, including account access, paid services, live response, external telemetry, production changes, or dynamic testing outside an authorized scope. Keep the task active and continue safe work.
 
+## Project planning and end-to-end environment
+
+For a new software project or material scope change, begin with a structured plan before deep research or implementation. Map each capability to its data and trust boundaries, tools and integrations, security controls, and verification method. Distinguish installed skill instructions from connected tools and services. Record missing access, likely costs, source evidence, and any user decision needed.
+
+After the plan is settled, research each security-sensitive choice with current primary sources, then build and verify in slices. Keep the app runnable and test critical user journeys in an isolated environment with synthetic accounts and data, provider emulators or authorized test modes, and deterministic reset and cleanup. Run the full planned E2E and security suite before completion. Do not use production data or claim all checks are green when a required layer is unavailable or failed. Preserve separate authorization gates for paid services, production, and dynamic security testing.
+
 ## Related specialist skills
 
 - Defensive code review: security-review, as required in the pre-build workflow below.

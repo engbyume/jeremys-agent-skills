@@ -64,6 +64,12 @@ Apply Designmaxxing's visual guidance to user-facing websites, apps, game UI, wi
 - For a named product reference, review current official materials and normal user-visible behavior. Use reverse-engineer-anything when shipped behavior is important and permitted. Do not bypass access controls or terms or copy protected code, brand identity, or assets.
 - Search current project and user-provided assets before any production asset decision. Follow [design-asset sources](references/design-asset-sources.md) for approved sources and reuse rights.
 
+### Project plan and end-to-end validation
+
+For a new product or material scope change, start with a structured plan before deep research or implementation. Break down the user journeys, visual capabilities, integrations, data needs, design assets, and test gates. For each item, compare current products and maintained options, cite current sources, and record fit, license and reuse rights, accessibility, privacy and security, cost, maintenance, available tools, and missing connectors or services. A skill document does not prove that its app, MCP, account, or CLI is available.
+
+If the user wants to steer the plan first, present the plan as a checkpoint and wait for that direction before deep research or implementation. If the prompt already includes the user's plan decisions and instruction to proceed, continue within that stated scope. After the plan is settled, research each item, keep the app runnable, implement in slices, and inspect real interface states at target viewports. Define reproducible local and CI E2E checks with synthetic data. Use the platform's test runner and available browser or desktop tools for visual checks. Do not claim full UI acceptance when a required test environment or inspection tool is unavailable.
+
 ## User data and privacy baseline
 
 Apply this baseline before a product collects, receives, infers, stores, shares, or tracks personal data. These are mandatory product requirements. Legal duties vary by market, user age, data, product role, and purpose.
