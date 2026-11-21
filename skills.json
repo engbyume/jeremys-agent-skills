@@ -883,7 +883,7 @@
       "name": "Securitymaxxing",
       "category": "security",
       "activation": "mandatory-on-match",
-      "description": "Mandatory first-pass security guidance for software and digital-product work. Includes project lifecycle scanning, privacy, data minimization and deletion, authorization, AI provider budgets, trademark and license review, a 101-scenario threat catalog, and 70 core and 23 conditional checks.",
+      "description": "Mandatory first-pass security guidance for software and digital-product work. Includes lifecycle scans, a whole-project security and legal readiness audit, password-reset and poisoning safeguards, privacy and deletion, authorization, AI spend caps, license review, and 70 core and 23 conditional checks.",
       "installed_name": "securitymaxxing",
       "source_repository": null,
       "source_path": null,
