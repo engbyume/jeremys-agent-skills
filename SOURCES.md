@@ -1,59 +1,23 @@
-# Sources and provenance
+# Sources and credits
 
-This catalog was refreshed on 2026-11-21 to include Jeremy-authored public skill repositories and the Markdown skill index.
+The [skill catalog](skills.md) links to every source repository and includes a direct install command. This repository is an index; it does not copy upstream skill code.
 
-## Included source repositories
+## Created by Jeremy
 
-| Repository | Why it is included |
-| --- | --- |
-| [engbyume/background-skill-fixer](https://github.com/engbyume/background-skill-fixer) | Jeremy-authored standalone skill for isolated repair after a documented skill capability failure. |
-| [engbyume/codex-harness-free-model-router](https://github.com/engbyume/codex-harness-free-model-router) | Jeremy-authored Codex model-router project with a companion skill; provider and model values remain user-configured. |
-| [engbyume/codex-recursive-self-improvement](https://github.com/engbyume/codex-recursive-self-improvement) | Jeremy-authored skill repository containing the self-improvement skill and the separately installable programmatic-tool-calling skill. |
-| [engbyume/designmaxxing](https://github.com/engbyume/designmaxxing) | Jeremy-authored first-pass UI/UX design baseline. |
-| [engbyume/securitymaxxing](https://github.com/engbyume/securitymaxxing) | Jeremy-authored first-pass application-security baseline. |
-| [obra/superpowers](https://github.com/obra/superpowers) | Present in the skills lockfile. |
-| [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | Present in the skills lockfile and used as a general browser automation capability. |
-| [browser-use/browser-use](https://github.com/browser-use/browser-use) | Present in the skills lockfile and used for browser automation workflows. |
-| [anthropics/skills](https://github.com/anthropics/skills) | Installed Git repository containing general-purpose document, design, planning, and developer skills. |
-| [robabby/claude-skills](https://github.com/robabby/claude-skills) | Installed Git repository containing memory, workflow, coding, testing, and quality skills, including the YAML-frontmatter memory architecture documented in this catalog. |
-| [deonmenezes/mantishack](https://github.com/deonmenezes/mantishack) | Installed Git repository containing an authorized security workflow. |
-| [vercel-labs/opensrc](https://github.com/vercel-labs/opensrc) | Installed Git repository containing a general source-inspection skill. |
-| [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | Installed Git repository containing general UI/UX design intelligence. |
-| [cookiy-ai/user-research-skill](https://github.com/cookiy-ai/user-research-skill) | Installed Git repository containing a general user-research workflow. |
-| [bradautomates/claude-video](https://github.com/bradautomates/claude-video) | Installed Git repository containing a general video analysis workflow. |
-| [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | Explicit GitHub source in the installed skill documentation. |
-| [DannyMac180/sol-advisor](https://github.com/DannyMac180/sol-advisor) | Installed Codex plugin with public repository metadata. See `skills.md` for its source and installation details. |
-| [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | GitHub source verified from the installed skill documentation. |
-| [Nanako0129/sepia](https://github.com/Nanako0129/sepia) | Scoped `skills/sepia` package installed after static audit; repository-level CI workflow quarantined. |
-| [engbyume/progressive-codex-model-router](https://github.com/engbyume/progressive-codex-model-router) | Public standalone Codex skill v0.5.4. Parent: GPT-6 Luna / max; routine subagent work from small through high, including non-computer agentic work: GPT-6.1 Terra / low; computer-use subagents: GPT-6 Luna / max; nonroutine consequential review or coordination: Luna / max when warranted; hard or high-risk child: GPT-6.2 Sol / medium; ultra-complex child: GPT-6.2 Sol / high only under 10 minutes, medium otherwise. Snapshot commit `f5d90eb4d49e822de326146c83d163954dd33472` (2026-11-18). |
-| [aiwithremy/session-skill-audit](https://github.com/aiwithremy/session-skill-audit) | Upstream session-audit skill at commit `eb189768e88a773cdc4d57402b923cc14e11fa8f`. No LICENSE file was present; this catalog stores only a source link and metadata, not source files. |
-## Methodology
+The following six skills are Jeremy's original work. Their linked repositories contain the source and revision history.
 
-1. Enumerate installed skill directories and resolve their Git repositories.
-2. Check the local skills lockfile for GitHub sources that are not represented by a local repository.
-3. Keep only public GitHub origins that could be verified.
-4. Categorize each skill by its primary job and write a short description from its installed metadata.
-5. Scan the final catalog for credentials, private prompts, machine paths, and excluded platform or service names.
+- [Background Skill Fixer](https://github.com/engbyume/background-skill-fixer)
+- [Codex Harness Free Model Router](https://github.com/engbyume/codex-harness-free-model-router)
+- [Codex Recursive Self-Improvement](https://github.com/engbyume/codex-recursive-self-improvement)
+- [Progressive Codex Model Router](https://github.com/engbyume/progressive-codex-model-router)
+- [Designmaxxing](https://github.com/engbyume/designmaxxing)
+- [Securitymaxxing](https://github.com/engbyume/securitymaxxing)
 
-General agent capabilities such as browser automation, context compression, graph-based knowledge organization, and source inspection are retained because they are reusable agent workflows, not integrations for one hosted vendor. Service wrappers and platform-specific skills remain excluded even when their repositories are public.
+## Other sources
 
-## Provenance notes
+Skills by other authors remain in their original repositories. The catalog shows the source link and skill folder for each entry.
 
-- Repository links point to original sources; this catalog does not copy skill implementations.
-- The YAML Wiki Framework guide is a descriptive synthesis for agents and users. It does not copy the upstream repository's private/local configuration or reproduce research-paper text.
-- Paper links are public reference links: [Generative Agents](https://arxiv.org/abs/2304.03442) and [Mem0](https://arxiv.org/abs/2504.19413). They are labeled as conceptual inspiration only.
-- The install column uses each source repository's current default unless its command pins a direct skill path. Pin a reviewed tag or commit when reproducible retrieval is required.
-- Monorepo entries include their subpath so a reader can find the original skill in the upstream repository.
-- The public catalog intentionally avoids local filesystem paths, secrets, credentials, environment files, raw prompts, and bundled third-party code.
+## Separate reference
 
-## Exclusions
+The [YAML Wiki Framework guide](frameworks/yaml-wiki-framework.md) is not an installable skill. It summarizes a public memory approach and labels its research references as conceptual inspiration.
 
-The following are not cataloged:
-
-- **Aside skills:** bundled Aside resources and `aside-*` skills, per request.
-- **Local or private operating skills:** personal mentor, workspace, memory, and machine-operation instructions where no public GitHub origin was verified.
-- **Tool or service-specific skills:** Anytype, Firecrawl, Higgsfield, Composio, Google Stitch, Unusual Whales, OfficeCLI, Scrapling, and other hosted-service or single-tool wrappers.
-- **Open Pencil:** excluded because it is a skill tightly coupled to the OpenPencil editor, despite having a public repository.
-- **Unverified local skills:** skills with no GitHub remote, lockfile entry, or explicit upstream repository metadata.
-
-The policy favors omission over guessing. If a future install records a clear public GitHub source and the skill is general-purpose, add it with a short description and provenance note.
