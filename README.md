@@ -1,50 +1,122 @@
 # Jeremy's Agent Skills
 
-A personal catalog of AI-agent skills that were installed from public GitHub repositories.
+A source-linked catalog of portable skills for AI agents. It includes upstream skills and Jeremy-authored skills with dedicated public source paths.
 
-This repository is a **catalog, not a mirror**. It contains short descriptions, categories, provenance notes, and links back to the original repositories. It does not copy third-party skill instructions, bundled scripts, private prompts, credentials, environment files, or local configuration.
+The `Origin` column marks Jeremy-authored entries. Full skill files remain in their linked repositories; this repository keeps the category lists, descriptions, provenance, and direct install commands together.
 
-## What is included
+## Skills by category
 
-A skill is included only when its source can be traced to a public GitHub repository through one or more of:
+### Memory and knowledge
 
-- a Git remote on the installed source repository
-- the local skills lockfile
-- an explicit repository or installation link in the skill's own metadata
+Skills for preserving context, retrieving past decisions, and organizing linked notes.
 
-The catalog includes task-oriented skills that are useful across agent runtimes, such as memory workflows, context efficiency, planning, research, writing, design, documents, security, and verification.
+- [Glean](https://github.com/robabby/claude-skills)
+- [Graphify](https://github.com/Graphify-Labs/graphify)
+- [Hydrate](https://github.com/robabby/claude-skills)
+- [Pickup](https://github.com/robabby/claude-skills)
+- [Recall](https://github.com/robabby/claude-skills)
+- [Reflect](https://github.com/robabby/claude-skills)
+- [Remember](https://github.com/robabby/claude-skills)
+- [Vault Status](https://github.com/robabby/claude-skills)
+- [YAML Wiki Framework](https://github.com/robabby/claude-skills)
 
-## What is intentionally excluded
+### Agent efficiency
 
-The catalog does not include:
+Workflows for managing context, coordination, model routing, and agent process.
 
-- Aside skills or other bundled platform skills
-- Skills with no verifiable GitHub source
-- Local-only skills and Jeremy-specific private operating instructions
-- Vendor or service integration skills that are tied to a single product or hosted tool
-- Private files, `.env` files, API keys, cookies, prompts, or machine-specific paths
+- [Background Skill Fixer](https://github.com/engbyume/background-skill-fixer) **(Jeremy-authored)**
+- [Codex Harness Free Model Router](https://github.com/engbyume/codex-harness-free-model-router) **(Jeremy-authored)**
+- [Codex Recursive Self-Improvement](https://github.com/engbyume/codex-recursive-self-improvement) **(Jeremy-authored)**
+- [Lean Context](https://github.com/yvgude/lean-ctx)
+- [Programmatic Tool Calling](https://github.com/engbyume/codex-recursive-self-improvement) **(Jeremy-authored)**
+- [Progressive Codex Model Router](https://github.com/engbyume/progressive-codex-model-router) **(Jeremy-authored)**
+- [Session Skill Audit](https://github.com/aiwithremy/session-skill-audit)
+- [Sol Advisor](https://github.com/DannyMac180/sol-advisor)
+- [Using Superpowers](https://github.com/obra/superpowers)
 
-The exclusion policy is deliberately conservative. A repository may be public and still be left out if the installed skill is primarily a wrapper for a particular service or local runtime.
+### Planning and quality
 
-## Categories
+Skills for clarifying requirements, structuring development, and verifying a result.
 
-- **Memory and knowledge**: recall, retention, reflection, vault workflows, graph-based knowledge organization
-- **Agent efficiency**: context compression, batching, workflow improvement, and process optimization
-- **Planning and quality**: brainstorming, skill creation, testing, security review, and verification loops
-- **Research and investigation**: user research, deep investigation, and evidence-oriented analysis
-- **Writing and communication**: anti-slop writing, internal communications, and documentation co-authoring
-- **Creative and visual work**: algorithmic art, canvas design, frontend design, themes, and design intelligence
-- **Documents and data**: PDF, DOCX, PPTX, XLSX, and office-document workflows
-- **Developer workflows**: API development, MCP server building, web artifact creation, and web app testing
-- **Media analysis**: video inspection and transcript-assisted visual analysis
-- **Security**: defensive and authorized security review workflows
+- [Brainstorming](https://github.com/obra/superpowers)
+- [Coding Standards](https://github.com/robabby/claude-skills)
+- [Evaluation Harness](https://github.com/robabby/claude-skills)
+- [Link Check](https://github.com/robabby/claude-skills)
+- [Skill Creator](https://github.com/anthropics/skills)
+- [TDD Workflow](https://github.com/robabby/claude-skills)
+- [Verification Loop](https://github.com/robabby/claude-skills)
+- [Web App Testing](https://github.com/anthropics/skills)
+
+### Research and investigation
+
+Tools for gathering web evidence, operating browsers, and studying user needs.
+
+- [Agent Browser](https://github.com/vercel-labs/agent-browser)
+- [Browser Use](https://github.com/browser-use/browser-use)
+- [User Research](https://github.com/cookiy-ai/user-research-skill)
+
+### Writing and communication
+
+Guidance for clear, audience-aware writing and collaborative documents.
+
+- [Document Co-authoring](https://github.com/anthropics/skills)
+- [Internal Communications](https://github.com/anthropics/skills)
+- [Sepia](https://github.com/Nanako0129/sepia)
+
+### Creative and visual work
+
+Skills for visual design, brand systems, and creative image work.
+
+- [Algorithmic Art](https://github.com/anthropics/skills)
+- [Brand Guidelines](https://github.com/anthropics/skills)
+- [Canvas Design](https://github.com/anthropics/skills)
+- [Designmaxxing](https://github.com/engbyume/designmaxxing) **(Jeremy-authored)**
+- [Frontend Design](https://github.com/anthropics/skills)
+- [Slack GIF Creator](https://github.com/anthropics/skills)
+- [Theme Factory](https://github.com/anthropics/skills)
+- [UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)
+
+### Documents and data
+
+Workflows for reading, editing, and validating common office formats.
+
+- [PDF](https://github.com/anthropics/skills)
+- [PowerPoint](https://github.com/anthropics/skills)
+- [Spreadsheet Workflows](https://github.com/anthropics/skills)
+- [Word Documents](https://github.com/anthropics/skills)
+
+### Developer workflows
+
+Technical guidance for APIs, backends, frontends, MCP, and source inspection.
+
+- [Backend Patterns](https://github.com/robabby/claude-skills)
+- [Claude API](https://github.com/anthropics/skills)
+- [Frontend Patterns](https://github.com/robabby/claude-skills)
+- [MCP Builder](https://github.com/anthropics/skills)
+- [Open Source Inspector](https://github.com/vercel-labs/opensrc)
+- [Postgres Patterns](https://github.com/robabby/claude-skills)
+- [Web Artifacts Builder](https://github.com/anthropics/skills)
+
+### Media analysis
+
+Tools for reviewing video, transcripts, and time-linked visual evidence.
+
+- [Watch](https://github.com/bradautomates/claude-video)
+
+### Security
+
+Defensive guidance for application security and authorized assessment.
+
+- [Mantishack](https://github.com/deonmenezes/mantishack)
+- [Security Review](https://github.com/robabby/claude-skills)
+- [Securitymaxxing](https://github.com/engbyume/securitymaxxing) **(Jeremy-authored)**
 
 ## Files
 
-- [`skills.json`](skills.json): machine-readable catalog
-- [`SOURCES.md`](SOURCES.md): source repositories and provenance notes
-- [`frameworks/yaml-wiki-framework.md`](frameworks/yaml-wiki-framework.md): user and agent guide with a copyable prompt
-- [`frameworks/yaml-wiki-framework.yaml`](frameworks/yaml-wiki-framework.yaml): machine-readable framework contract
+- [`skills.md`](skills.md): catalog of skill names, categories, descriptions, sources, and terminal commands.
+- [`SOURCES.md`](SOURCES.md): source repository and provenance notes.
+- [`frameworks/yaml-wiki-framework.md`](frameworks/yaml-wiki-framework.md): user and agent guide with a copyable prompt.
+- [`frameworks/yaml-wiki-framework.yaml`](frameworks/yaml-wiki-framework.yaml): machine-readable framework contract.
 
 ### YAML Wiki Framework
 
@@ -52,8 +124,8 @@ The catalog includes a descriptive YAML Wiki Framework based on the public `roba
 
 ## Updating the catalog
 
-When adding a skill, verify the original GitHub repository first. Add a concise description, a category, the installed skill name, and a source link. Do not copy the skill's implementation into this repository.
+Before adding an entry, verify its source repository, skill name, category, description, and terminal command. Keep source code and full third-party skill instructions in their original repositories.
 
 ## Attribution
 
-All skill names, descriptions, and linked repositories belong to their respective authors. This catalog is an organizational index and is not affiliated with the upstream projects.
+Each entry is marked as Jeremy-authored or upstream. Source links identify the repository that provides the skill or reference material.
