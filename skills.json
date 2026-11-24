@@ -489,12 +489,12 @@
       "name": "Codex Budget Model Router",
       "category": "agents",
       "activation": "optional-on-match",
-      "description": "Coordinates Codex work as a foreman and routes delegated subagents to the lowest-cost capable model and effort per task. Keeps the parent on GPT-6 Luna / max and aggregates child results. README compares benchmark scores, task economics, and OpenAI API rates with sourced charts.",
+      "description": "Coordinates Codex work as a foreman and routes delegated subagents to the lowest-cost capable model and effort per task. Keeps the parent on GPT-6 Luna / max and aggregates child results. README compares benchmark scores and task time, lists OpenAI Standard API rates, and includes sourced score-versus-time charts.",
       "installed_name": "codex-budget-model-router",
       "source_repository": "https://github.com/engbyume/codex-budget-model-router",
       "source_path": null,
       "provenance": "Owner-published standalone public-safe Codex skill; source is at the repository root.",
-      "source_snapshot": "c8549948eef2fb6f87e675681d15eba3204ee959"
+      "source_snapshot": "edcb3259e7b91a3403af862f8d9558ffa8d0bec6"
     },
     {
       "id": "background-skill-fixer",

@@ -7,7 +7,7 @@ This source ledger records the provenance decisions for the public catalog. One-
 | Repository | Why it is included |
 | --- | --- |
 | [openai/plugins](https://github.com/openai/plugins) | Public source pinned to `82fd64bce3869f0d4c0bb2bf0e36a6e262ca5ad8`; 122 active skills are catalog-only links. GitHub reports no repository license metadata, so no upstream instructions are copied. |
-| [engbyume/codex-budget-model-router](https://github.com/engbyume/codex-budget-model-router) | Owner-published standalone public-safe Codex skill for cost-aware subagent routing, with the parent on GPT-6 Luna / max. Its README includes attributed benchmark, task-time and task-cost comparisons, and OpenAI API rates. |
+| [engbyume/codex-budget-model-router](https://github.com/engbyume/codex-budget-model-router) | Owner-published standalone public-safe Codex skill for cost-aware subagent routing, with the parent on GPT-6 Luna / max. Its README includes attributed benchmark and task-time comparisons, OpenAI Standard API rates, and score-versus-time charts. |
 | [engbyume/background-skill-fixer](https://github.com/engbyume/background-skill-fixer) | Owner-published standalone public-safe skill for isolated root-cause repair of failed skills while the parent continues its authorized task. |
 | [obra/superpowers](https://github.com/obra/superpowers) | Present in the skills lockfile. |
 | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | Present in the skills lockfile and used as a general browser automation capability. |
