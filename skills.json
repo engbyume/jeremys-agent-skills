@@ -843,6 +843,18 @@
       "source_snapshot": null
     },
     {
+      "id": "jeremys-design-rule-book",
+      "name": "Jeremy's Design Rule Book",
+      "category": "design",
+      "activation": "mandatory-on-match",
+      "description": "Use when creating or editing a Canva presentation, social post, infographic, ad, poster, or other visual that needs a clear, coherent design direction.",
+      "installed_name": "jeremys-design-rule-book",
+      "source_repository": null,
+      "source_path": null,
+      "provenance": "Explicitly approved, public-safe first-party package; no upstream source is claimed.",
+      "source_snapshot": null
+    },
+    {
       "id": "cloudflare-security-audit",
       "name": "Cloudflare Security Audit",
       "category": "security",

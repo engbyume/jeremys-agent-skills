@@ -2,7 +2,7 @@
 
 Portable, public-safe skill packages for agents that design, build, secure, and maintain software.
 
-**11 installable packages** · **201 catalog records** · **10 categories**
+**12 installable packages** · **202 catalog records** · **10 categories**
 
 [Browse by category](#browse-by-category) · [Installable packages](#first-party-packages) · [Full catalog](skills.json) · [Sources and provenance](SOURCES.md)
 
@@ -134,6 +134,7 @@ Ordered by common project workflow.
 ### Product and engineering
 
 - [Designmaxxing](skills/design/designmaxxing/SKILL.md): platform-aware visual guidance for websites, apps, and game UI, with code-derived privacy policies, complete third-party disclosure, no ads or tracking by default, scoped Strix assessment, and contextual cues for swipeable cards, dialogs, forms, step indicators, and choice layout.
+- [Jeremy's Design Rule Book](skills/design/jeremys-design-rule-book/SKILL.md): personal Canva guidance for research-led references, consistent typography and color, concise copy, purposeful assets, and visual review.
 - [Mobile Native](skills/design/mobile-native/SKILL.md): phone-specific behavior for websites, web apps, and PWAs, with real-device checks.
 - [Platform Architecture](skills/development/platform-architecture/SKILL.md): backend, data consistency, realtime, delivery, observability, and recovery choices.
 - [Securitymaxxing](skills/security/securitymaxxing/SKILL.md): the first-pass security baseline for software and digital products, with lifecycle scanning, a whole-project security and legal audit, password-reset and poisoning controls, privacy and deletion safeguards, AI spend caps, trademark checks, and license review.
@@ -153,7 +154,7 @@ Ordered by common project workflow.
 
 ## Full catalog and provenance
 
-The [201-entry catalog](skills.json) records short descriptions, simplified categories, activation labels, and source metadata. Each record has a category folder and `CATALOG.md` card; the 11 installable packages also include `SKILL.md`. Upstream skill bodies stay with their authors. See [SOURCES.md](SOURCES.md) for provenance.
+The [202-entry catalog](skills.json) records short descriptions, simplified categories, activation labels, and source metadata. Each record has a category folder and `CATALOG.md` card; the 12 installable packages also include `SKILL.md`. Upstream skill bodies stay with their authors. See [SOURCES.md](SOURCES.md) for provenance.
 
 ## Public-safety rules
 
