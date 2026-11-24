@@ -835,7 +835,7 @@
       "name": "Designmaxxing",
       "category": "design",
       "activation": "mandatory-on-match",
-      "description": "First-party visual-design guidance for websites, apps, game UI, widgets, and other visual products. Applies principles by platform, routes 3D scenes to engine-specific skills, and includes code-derived privacy disclosures, deletion controls, scoped Strix assessment, accessibility, and conditional Lenis, GSAP, and Vanta tooling guidance.",
+      "description": "First-party visual-design guidance for websites, apps, game UI, widgets, and other visual products. Applies principles by platform and routes 3D scenes to engine-specific skills. Includes code-derived privacy disclosures, deletion controls, scoped Strix assessment, accessibility, conditional Lenis, GSAP, and Vanta guidance, and contextual cues for cards, dialogs, forms, steps, and choices.",
       "installed_name": "designmaxxing",
       "source_repository": null,
       "source_path": null,

@@ -50,7 +50,7 @@ Apply Designmaxxing's visual guidance to user-facing websites, apps, game UI, wi
 - For redesigns, inspect the current interface. Preserve its information structure, brand assets, and copy unless the request asks for changes.
 - After this baseline, select only references and matching specialist skills from the list above. Do not load every design or media skill.
 - Use [Apple design review](references/apple-design.md) for a mandatory interaction and craft review on every UI task. Apply Apple-specific visual and motion treatments only when they fit the product, platform, user direction, and accessibility needs. Native Apple interfaces must also follow current Apple Human Interface Guidelines and platform APIs.
-- Read [UX principles](references/ux-principles.md) when a relevant decision could benefit from those prompts or when requested. Treat the concepts as optional heuristics, not universal laws.
+- Read [UX principles](references/ux-principles.md) when choosing option grouping, progress indicators, carousels, modal pop-ups, form autofill, or information hierarchy, or when requested. Apply its patterns only where they fit; treat heuristics as prompts, not universal laws.
 - For any website, read [website enhancements](references/website-enhancements.md). Complete its public launch baseline before release. Strongly consider the enhancement ideas in context, but add only those that solve a real user need; they are not a mandatory feature checklist.
 - For products planned for public release, read [release-readiness guidance](references/release-readiness.md) when claims, personal data, forms, purchases, tracking, third-party services, or user-generated content are relevant. Apply only the checks that fit the product and target markets. This is not legal advice.
 - For substantial design reviews, new journeys, or cross-platform experiences, read [design-review checklist](references/design-review-checklist.md) and apply only the sections that fit. For small targeted edits, use only matching prompts. The checklist does not replace user research or accessibility testing.
@@ -175,6 +175,17 @@ A product that collects or processes personal data must have a product-specific 
 - Check text and non-text contrast, image alternatives, keyboard access, visible focus, clear labels, form errors, appropriate hit targets, zoom and reflow, and reduced motion where relevant.
 - Use the current WCAG version as a technical reference for applicable web content. Automated checks alone do not establish accessibility or legal conformance.
 - Keep widgets consistent with their host theme and available space. Do not impose an unrelated style.
+
+## Interaction clarity patterns
+
+Apply these when the matching interface element exists in a website, app, game UI, or other visual product. Adapt them to the platform. They are not a universal feature checklist and do not apply to 3D scene-only work.
+
+- **Swipeable card sets:** When a horizontal swipeable card set has more items, reveal 32% of the next card in the viewport as a continuation cue. Adjust only when platform, content, safe areas, or viewport constraints make that misleading. Provide accessible next/previous controls and meaningful carousel semantics; do not make swiping the only way to continue.
+- **Modal pop-ups:** Dim the background behind a true modal dialog, make background content inert while it is open, manage focus, and provide a clear close or cancel action. Do not dim the whole page for a non-modal popover, tooltip, or toast.
+- **Important content:** Style required notices, primary actions, and useful next steps in the product's visual language and near the task they affect. Do not make them resemble ads or sponsored content. Clearly distinguish paid placements and promotions where they exist.
+- **Address forms:** Use platform or browser autofill semantics for address fields. When a trusted lookup fits, let users enter a postal code or the start of an address and choose a suggested completion. Keep manual entry and correction available, support keyboard and assistive technology, account for local address formats, and disclose or avoid unnecessary third-party address sharing.
+- **Connected steps:** Connect steps with a line or track when they form a real sequence, such as day 1 through day 4. Show current and completed states with text or semantics as well as visual styling. Make the indicator interactive only when users can navigate with it.
+- **Choice sets:** Show a short, relevant set of options first and keep the screen uncluttered. Use progressive disclosure for secondary choices, but keep material options, costs, eligibility, and terms easy to find. Do not force a choice by hiding alternatives.
 
 ## Premium-feeling interaction and finish cues
 
