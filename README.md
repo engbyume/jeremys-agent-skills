@@ -134,7 +134,7 @@ Ordered by common project workflow.
 ### Product and engineering
 
 - [Designmaxxing](skills/design/designmaxxing/SKILL.md): platform-aware visual guidance for websites, apps, and game UI, with code-derived privacy policies, complete third-party disclosure, no ads or tracking by default, scoped Strix assessment, and contextual cues for swipeable cards, dialogs, forms, step indicators, and choice layout.
-- [Jeremy's Design Rule Book](skills/design/jeremys-design-rule-book/SKILL.md): personal Canva guidance for research-led references, consistent typography and color, concise copy, purposeful assets, and visual review.
+- [Jeremy's Design Rule Book](skills/design/jeremys-design-rule-book/SKILL.md): personal visual-design guidance across platforms, with adaptable typography, color, assets, research, Computer Use, and whole-design review.
 - [Mobile Native](skills/design/mobile-native/SKILL.md): phone-specific behavior for websites, web apps, and PWAs, with real-device checks.
 - [Platform Architecture](skills/development/platform-architecture/SKILL.md): backend, data consistency, realtime, delivery, observability, and recovery choices.
 - [Securitymaxxing](skills/security/securitymaxxing/SKILL.md): the first-pass security baseline for software and digital products, with lifecycle scanning, a whole-project security and legal audit, password-reset and poisoning controls, privacy and deletion safeguards, AI spend caps, trademark checks, and license review.
