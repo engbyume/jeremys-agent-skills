@@ -7,7 +7,7 @@ This source ledger records the provenance decisions for the public catalog. One-
 | Repository | Why it is included |
 | --- | --- |
 | [openai/plugins](https://github.com/openai/plugins) | Public source pinned to `82fd64bce3869f0d4c0bb2bf0e36a6e262ca5ad8`; 122 active skills are catalog-only links. GitHub reports no repository license metadata, so no upstream instructions are copied. |
-| [engbyume/codex-budget-model-router](https://github.com/engbyume/codex-budget-model-router) | Owner-published standalone public-safe Codex skill for cost-aware subagent routing, with the parent on GPT-6 Luna / max. Its README includes attributed benchmark and task-time comparisons, OpenAI Standard API rates, and score-versus-time charts. |
+| [engbyume/codex-budget-model-router](https://github.com/engbyume/codex-budget-model-router) | Owner-published standalone public-safe Codex skill for parent and subagent routing by task difficulty. Its README includes attributed benchmark and task-time comparisons, OpenAI Standard API rates, and score-versus-time charts. |
 | [engbyume/background-skill-fixer](https://github.com/engbyume/background-skill-fixer) | Owner-published standalone public-safe skill for isolated root-cause repair of failed skills while the parent continues its authorized task. |
 | [obra/superpowers](https://github.com/obra/superpowers) | Present in the skills lockfile. |
 | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | Present in the skills lockfile and used as a general browser automation capability. |
@@ -90,6 +90,7 @@ General agent capabilities such as browser automation, context compression, grap
 
 ## Provenance notes
 
+- 2026-11-24: Updated the Codex Budget Model Router catalog to use the same parent and subagent tiers: Luna / max for routine Easy and Medium, Terra / low for routine Hard, and Sol / medium for complex or high-risk implementation. The public README retains OpenAI Standard API rates and score-versus-time graphs without per-task cost data.
 - 2026-11-09: Aligned Usage Limit Resume final-review guidance with the parent-Luna, child-only Codex routing rule; preserved its serialized review action for compatibility.
 - 2026-11-09: Published Progressive Codex Model Router as a standalone public repository. This catalog links to the root-level skill instead of bundling a second copy.
 - 2026-11-14: Published Background Skill Fixer as a standalone public repository and added the full reviewed package to `skills/agents/background-skill-fixer`.
