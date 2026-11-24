@@ -485,16 +485,16 @@
       "source_snapshot": "676d200733ebd57caf1270ba94d892c95e9f8aee"
     },
     {
-      "id": "progressive-codex-model-router",
-      "name": "Progressive Codex Model Router",
+      "id": "codex-budget-model-router",
+      "name": "Codex Budget Model Router",
       "category": "agents",
       "activation": "optional-on-match",
       "description": "Coordinates Codex work as a foreman and routes delegated subagents to the lowest-cost capable model and effort per task. Keeps the parent on GPT-6 Luna / max and aggregates child results. Designed to stretch included Codex usage for Plus users.",
-      "installed_name": "progressive-codex-model-router",
-      "source_repository": "https://github.com/engbyume/progressive-codex-model-router",
+      "installed_name": "codex-budget-model-router",
+      "source_repository": "https://github.com/engbyume/codex-budget-model-router",
       "source_path": null,
       "provenance": "Owner-published standalone public-safe Codex skill; source is at the repository root.",
-      "source_snapshot": "e2c0ceec91e8d882b4ced0b90b34f50ae2903f2b"
+      "source_snapshot": "94ed01de46bb76bfc868d73b202264551ce1b925"
     },
     {
       "id": "background-skill-fixer",

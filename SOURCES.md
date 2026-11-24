@@ -7,7 +7,7 @@ This source ledger records the provenance decisions for the public catalog. One-
 | Repository | Why it is included |
 | --- | --- |
 | [openai/plugins](https://github.com/openai/plugins) | Public source pinned to `82fd64bce3869f0d4c0bb2bf0e36a6e262ca5ad8`; 122 active skills are catalog-only links. GitHub reports no repository license metadata, so no upstream instructions are copied. |
-| [engbyume/progressive-codex-model-router](https://github.com/engbyume/progressive-codex-model-router) | Owner-published standalone public-safe Codex skill for cost-aware subagent routing, with the parent on GPT-6 Luna / max. |
+| [engbyume/codex-budget-model-router](https://github.com/engbyume/codex-budget-model-router) | Owner-published standalone public-safe Codex skill for cost-aware subagent routing, with the parent on GPT-6 Luna / max. |
 | [engbyume/background-skill-fixer](https://github.com/engbyume/background-skill-fixer) | Owner-published standalone public-safe skill for isolated root-cause repair of failed skills while the parent continues its authorized task. |
 | [obra/superpowers](https://github.com/obra/superpowers) | Present in the skills lockfile. |
 | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) | Present in the skills lockfile and used as a general browser automation capability. |
@@ -23,7 +23,7 @@ This source ledger records the provenance decisions for the public catalog. One-
 | [bradautomates/claude-video](https://github.com/bradautomates/claude-video) | Installed Git repository containing a general video analysis workflow. |
 | [yvgude/lean-ctx](https://github.com/yvgude/lean-ctx) | Installed context tools with bounded raw-CLI and retry-safe modes plus a writable native fallback for MCP failures (2026-09-29). |
 | [DannyMac180/sol-advisor](https://github.com/DannyMac180/sol-advisor) | Installed Codex plugin with public repository metadata; cataloged for risk-gated role routing, cost-aware selection, and parent-owned verification. The local routing overlay uses Luna / Max by default, Sol / High for hard work, and Astra / High for very complex short work; it does not change upstream. |
-| [olsenbrands/sol-foreman](https://github.com/olsenbrands/sol-foreman) | Upstream source for the former local Sol Foreman workflow; its license is retained. The owner-published Progressive Codex Model Router adaptation lives in its own public repository, which this catalog links to. Upstream remains unchanged. |
+| [olsenbrands/sol-foreman](https://github.com/olsenbrands/sol-foreman) | Upstream source for the former local Sol Foreman workflow; its license is retained. The owner-published Codex Budget Model Router adaptation lives in its own public repository, which this catalog links to. Upstream remains unchanged. |
 | [Graphify-Labs/graphify](https://github.com/Graphify-Labs/graphify) | GitHub source verified from the installed skill documentation. |
 | [Nanako0129/sepia](https://github.com/Nanako0129/sepia) | Scoped `skills/sepia` package installed after static audit; repository-level CI workflow quarantined. A local writing adapter combines structure-aware narrative and professional-prose routes with conditional surface-style and formatting checks plus evidence-gated model guidance; upstream unchanged. |
 | [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd) | `skills/i-have-adhd` installed after universal static audit; active copy is mandatory for agent responses. |

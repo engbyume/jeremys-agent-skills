@@ -114,7 +114,7 @@ Each record has an `activation` label in `skills.json` and its `CATALOG.md` card
 `browser-use`, `canvas-design`, `claude-api`, `codex-harness-free-model-router`, `coding-standards`
 `doc-coauthoring`, `eval-harness`, `frontend-design`, `frontend-patterns`, `glean`, `graphify`, `headroom`
 `hydrate`, `internal-comms`, `link-check`, `mantishack`, `opensrc`, `pickup`, `postgres-patterns`
-`progressive-codex-model-router`, `recall`, `reflect`, `remember`, `rtk`, `shadcn-ui-design-system`
+`codex-budget-model-router`, `recall`, `reflect`, `remember`, `rtk`, `shadcn-ui-design-system`
 `slack-gif-creator`, `tdd-workflow`, `theme-factory`, `ui-ux-pro-max`, `user-research`, `using-superpowers`
 `vault-status`, `verification-loop`, `verify-fitlab`, `web-artifacts-builder`, `webapp-testing`
 `yaml-wiki-framework`
