@@ -90,7 +90,7 @@ General agent capabilities such as browser automation, context compression, grap
 
 ## Provenance notes
 
-- 2026-11-24: Updated the Codex Budget Model Router catalog to use the same parent and subagent tiers: Luna / max for routine Easy and Medium, Terra / low for routine Hard, and Sol / medium for complex or high-risk implementation. All other models outside those routes require explicit current-task user requests and are never selected automatically. The public README explains the observed performance-to-cost rationale and retains OpenAI Standard API rates and score-versus-time graphs without per-task cost data.
+- 2026-11-24: Updated the Codex Budget Model Router catalog to use the same parent and subagent tiers: Luna / max for routine Easy and Medium, Terra / low for routine Hard, and Sol / medium for complex or high-risk implementation. All other models outside those routes require explicit current-task user requests and are never selected automatically. The public README explains the best observed performance-versus-usage balance, distinguishes official API rates from ChatGPT and Codex plan usage, and keeps score-versus-time graphs without per-task cost data.
 - 2026-11-09: Aligned Usage Limit Resume final-review guidance with the parent-Luna, child-only Codex routing rule; preserved its serialized review action for compatibility.
 - 2026-11-09: Published Progressive Codex Model Router as a standalone public repository. This catalog links to the root-level skill instead of bundling a second copy.
 - 2026-11-14: Published Background Skill Fixer as a standalone public repository and added the full reviewed package to `skills/agents/background-skill-fixer`.
