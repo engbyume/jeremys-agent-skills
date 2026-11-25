@@ -489,12 +489,12 @@
       "name": "Codex Budget Model Router",
       "category": "agents",
       "activation": "optional-on-match",
-      "description": "Routes parent and subagent work by task difficulty: routine Easy and Medium tasks use GPT-6 Luna / max, routine Hard tasks use GPT-6.1 Terra / low, and complex or high-risk implementation uses GPT-6.2 Sol / medium. Select the parent route before task startup. The README compares benchmark scores and task time, lists OpenAI Standard API rates, and includes sourced score-versus-time charts.",
+      "description": "Routes parent and subagent work by task difficulty: routine Easy and Medium tasks use GPT-6 Luna / max, routine Hard tasks use GPT-6.1 Terra / low, and complex or high-risk implementation uses GPT-6.2 Sol / medium. Select the parent route before task startup. All other models outside these routes require an explicit current-task user request and are never selected automatically. The README explains the observed performance-to-cost rationale and compares benchmark scores and task time.",
       "installed_name": "codex-budget-model-router",
       "source_repository": "https://github.com/engbyume/codex-budget-model-router",
       "source_path": null,
       "provenance": "Owner-published standalone public-safe Codex skill; source is at the repository root.",
-      "source_snapshot": "ae308d82f56b79b427b953b552b5401ca147e7ca"
+      "source_snapshot": "047f9270fffd55c5098a8011aa62808e91c90b83"
     },
     {
       "id": "background-skill-fixer",
