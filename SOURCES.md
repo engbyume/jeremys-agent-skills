@@ -10,7 +10,7 @@ The following six skills are Jeremy's original work. Their linked repositories c
 - [Codex Harness Free Model Router](https://github.com/engbyume/codex-harness-free-model-router)
 - [Codex Recursive Self-Improvement](https://github.com/engbyume/codex-recursive-self-improvement)
 - [Codex Budget Model Router](https://github.com/engbyume/codex-budget-model-router)
-- [Gemini Budget Model Router](https://github.com/engbyume/gemini-budget-model-router)
+- [Gemini Free Trial Model Router](https://github.com/engbyume/gemini-free-trial-model-router)
 - [pstack (All Code Is Slop / Trust Pyramid)](https://github.com/PickleBoxer/pstack)
 - [Designmaxxing](https://github.com/engbyume/designmaxxing)
 - [Securitymaxxing](https://github.com/engbyume/securitymaxxing)

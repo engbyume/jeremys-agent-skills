@@ -32,14 +32,7 @@ Help agents manage context, coordination, skill maintenance, model choices, and 
 - [Codex Recursive Self-Improvement](https://github.com/engbyume/codex-recursive-self-improvement) (by Jeremy): Reviews task evidence for repeatable agent mistakes and turns verified causes into small, authorized improvements to prompts, skills, checks, memory, or runbooks. It improves the surrounding workflow, not model weights or hidden system messages.
 - [Lean Context](https://github.com/yvgude/lean-ctx): Helps agents stay focused in large code tasks by retrieving relevant files and symbols, compressing command output, and showing what context was actually viewed. This cuts unnecessary reading while leaving source material intact.
 - [Codex Budget Model Router](https://github.com/engbyume/codex-budget-model-router) (by Jeremy): Routes Codex parent and subagent work across GPT-6 Luna / max (easy/medium), GPT-6.1 Terra / low (routine hard), and GPT-6.2 Sol / medium (complex/high-risk).
-- [Gemini Budget Model Router](https://github.com/engbyume/gemini-budget-model-router) (by Jeremy): Routes Gemini and Antigravity tasks across Hydrogen Low (easy/medium), Hydrogen Medium (routine/regular hard), and Hydrogen High (extra-hard/complex+).
-
-## Trust Pyramid Framework (All Code Is Slop)
-
-This catalog follows `@poteto`'s **Trust Pyramid** from *All Code Is Slop (Except Mine)* (`pstack`):
-- **Base (Deterministic):** Hooks, types, linters, compilers, and verification scripts. When a requested capability belongs in Base, it is documented as a hook or script rather than a prose skill.
-- **Middle (Runtime & Verification):** Automated tests, evals, and runtime verification (`jeremy-eval-loop`, `tdd`, `blast-radius`, `interrogate`, `create-verification-skill`).
-- **Top (Prose & Judgment):** Skills and `AGENTS.md` / `GEMINI.md` rules reserved strictly for judgment, routing, and safety/consent gates (`poteto-mode`, `correct`, `architect`, `unslop`, `no-comments`).
+- [Gemini Free Trial Model Router](https://github.com/engbyume/gemini-free-trial-model-router) (by Jeremy): Model router for users on the free trial of the $20 Gemini plan without access to higher-tier paid models, routing across Hydrogen Low (easy/medium), Hydrogen Medium (routine/regular hard), and Hydrogen High (extra-hard/complex+).
 - [Session Skill Audit](https://github.com/aiwithremy/session-skill-audit): Reviews a full session transcript, including earlier turns, to explain why a skill was missed or failed and identify the smallest evidence-backed fix. It is a diagnostic audit, not automatic permission to rewrite instructions.
 - [Sol Advisor](https://github.com/DannyMac180/sol-advisor): Helps the parent decide when to work solo, delegate a bounded task, request an audit, or run a fuller review. It keeps risk, role boundaries, and parent-owned acceptance in view.
 - [Using Superpowers](https://github.com/obra/superpowers): Provides a map for discovering and applying Superpowers workflows for planning, coding, debugging, review, and delivery. It helps choose a disciplined method for the work at hand.
