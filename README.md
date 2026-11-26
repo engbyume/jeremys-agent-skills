@@ -29,11 +29,17 @@ Help agents manage context, coordination, skill maintenance, model choices, and 
 
 - [Background Skill Fixer](https://github.com/engbyume/background-skill-fixer) (by Jeremy): Repairs a skill after its advertised capability fails bounded retries, while the parent keeps the user's task moving through an authorized fallback. It targets the cause of the failure so future work can use the skill reliably.
 - [Codex Harness Free Model Router](https://github.com/engbyume/codex-harness-free-model-router) (by Jeremy): Helps configure a local model router for Codex using your own providers, endpoints, models, and fallback rules. It keeps provider choices and credentials under your control and assumes no presets.
-- Codex Usage Fallback Router (local-only): Keeps Codex work within account limits and provides a safe recovery path when usage runs low. Each parent, delegated worker or reviewer, and continuation agent checks usage at the start, after material work, and before its final report; permitted OpenCode recovery uses the official CLI.
 - [Codex Recursive Self-Improvement](https://github.com/engbyume/codex-recursive-self-improvement) (by Jeremy): Reviews task evidence for repeatable agent mistakes and turns verified causes into small, authorized improvements to prompts, skills, checks, memory, or runbooks. It improves the surrounding workflow, not model weights or hidden system messages.
 - [Lean Context](https://github.com/yvgude/lean-ctx): Helps agents stay focused in large code tasks by retrieving relevant files and symbols, compressing command output, and showing what context was actually viewed. This cuts unnecessary reading while leaving source material intact.
-- [Codex Budget Model Router](https://github.com/engbyume/codex-budget-model-router) (by Jeremy): Routes parent and child work so each task uses a suitable model and effort. It keeps shared changes, review, and final acceptance with the parent.
+- [Codex Budget Model Router](https://github.com/engbyume/codex-budget-model-router) (by Jeremy): Routes Codex parent and subagent work across GPT-6 Luna / max (easy/medium), GPT-6.1 Terra / low (routine hard), and GPT-6.2 Sol / medium (complex/high-risk).
 - [Gemini Budget Model Router](https://github.com/engbyume/gemini-budget-model-router) (by Jeremy): Routes Gemini and Antigravity tasks across Hydrogen Low (easy/medium), Hydrogen Medium (routine/regular hard), and Hydrogen High (extra-hard/complex+).
+
+## Trust Pyramid Framework (All Code Is Slop)
+
+This catalog follows `@poteto`'s **Trust Pyramid** from *All Code Is Slop (Except Mine)* (`pstack`):
+- **Base (Deterministic):** Hooks, types, linters, compilers, and verification scripts. When a requested capability belongs in Base, it is documented as a hook or script rather than a prose skill.
+- **Middle (Runtime & Verification):** Automated tests, evals, and runtime verification (`jeremy-eval-loop`, `tdd`, `blast-radius`, `interrogate`, `create-verification-skill`).
+- **Top (Prose & Judgment):** Skills and `AGENTS.md` / `GEMINI.md` rules reserved strictly for judgment, routing, and safety/consent gates (`poteto-mode`, `correct`, `architect`, `unslop`, `no-comments`).
 - [Session Skill Audit](https://github.com/aiwithremy/session-skill-audit): Reviews a full session transcript, including earlier turns, to explain why a skill was missed or failed and identify the smallest evidence-backed fix. It is a diagnostic audit, not automatic permission to rewrite instructions.
 - [Sol Advisor](https://github.com/DannyMac180/sol-advisor): Helps the parent decide when to work solo, delegate a bounded task, request an audit, or run a fuller review. It keeps risk, role boundaries, and parent-owned acceptance in view.
 - [Using Superpowers](https://github.com/obra/superpowers): Provides a map for discovering and applying Superpowers workflows for planning, coding, debugging, review, and delivery. It helps choose a disciplined method for the work at hand.
