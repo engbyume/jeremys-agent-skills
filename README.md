@@ -8,7 +8,7 @@ A human-readable index of agent skills, grouped by the problem they help solve. 
 - [Sources and credits](SOURCES.md): original authorship and source information.
 - [YAML Wiki Framework guide](frameworks/yaml-wiki-framework.md): a separate reference guide, not an installable skill.
 
-## Skills by category
+## 1. General all-agent skills
 
 ### Memory and knowledge
 
@@ -28,11 +28,7 @@ Preserve useful context and make past information easier to find again.
 Help agents manage context, coordination, skill maintenance, model choices, and repeatable work.
 
 - [Background Skill Fixer](https://github.com/engbyume/background-skill-fixer) (by Jeremy): Repairs a skill after its advertised capability fails bounded retries, while the parent keeps the user's task moving through an authorized fallback. It targets the cause of the failure so future work can use the skill reliably.
-- [Codex Harness Free Model Router](https://github.com/engbyume/codex-harness-free-model-router) (by Jeremy): Helps configure a local model router for Codex using your own providers, endpoints, models, and fallback rules. It keeps provider choices and credentials under your control and assumes no presets.
-- [Codex Recursive Self-Improvement](https://github.com/engbyume/codex-recursive-self-improvement) (by Jeremy): Reviews task evidence for repeatable agent mistakes and turns verified causes into small, authorized improvements to prompts, skills, checks, memory, or runbooks. It improves the surrounding workflow, not model weights or hidden system messages.
 - [Lean Context](https://github.com/yvgude/lean-ctx): Helps agents stay focused in large code tasks by retrieving relevant files and symbols, compressing command output, and showing what context was actually viewed. This cuts unnecessary reading while leaving source material intact.
-- [Codex Budget Model Router](https://github.com/engbyume/codex-budget-model-router) (by Jeremy): Routes Codex parent and subagent work across GPT-6 Luna / max (easy/medium), GPT-6.1 Terra / low (routine hard), and GPT-6.2 Sol / medium (complex/high-risk).
-- [Gemini Free Trial Model Router](https://github.com/engbyume/gemini-free-trial-model-router) (by Jeremy): Model router for users on the free trial of the $20 Gemini plan without access to higher-tier paid models, routing across Hydrogen Low (easy/medium), Hydrogen Medium (routine/regular hard), and Hydrogen High (extra-hard/complex+).
 - [Session Skill Audit](https://github.com/aiwithremy/session-skill-audit): Reviews a full session transcript, including earlier turns, to explain why a skill was missed or failed and identify the smallest evidence-backed fix. It is a diagnostic audit, not automatic permission to rewrite instructions.
 - [Sol Advisor](https://github.com/DannyMac180/sol-advisor): Helps the parent decide when to work solo, delegate a bounded task, request an audit, or run a fuller review. It keeps risk, role boundaries, and parent-owned acceptance in view.
 - [Using Superpowers](https://github.com/obra/superpowers): Provides a map for discovering and applying Superpowers workflows for planning, coding, debugging, review, and delivery. It helps choose a disciplined method for the work at hand.
@@ -113,6 +109,20 @@ Reduce application risk and guide authorized vulnerability assessment.
 - [Mantis Pipeline](https://github.com/deonmenezes/mantishack): Orchestrates a scoped vulnerability-discovery engagement from reconnaissance through detection, reachability, validation, and reporting. It ties findings to their evidence and tools, and allows active testing only within explicit authorization.
 - [Security Review](https://github.com/affaan-m/ECC): Helps spot application security issues in authentication, user input, secrets, API routes, payments, and other sensitive features. It supports safer implementation and release review.
 - [Securitymaxxing](https://github.com/engbyume/securitymaxxing) (by Jeremy): Sets an application-security baseline from planning through implementation, review, testing, and release preparation. It routes architecture-specific checks and security specialists without authorizing scans or release.
+
+## 2. Codex-adapted skills
+
+Skills tailored specifically for OpenAI Codex workflows, model routing, and self-improvement.
+
+- [Codex Harness Free Model Router](https://github.com/engbyume/codex-harness-free-model-router) (by Jeremy): Helps configure a local model router for Codex using your own providers, endpoints, models, and fallback rules. It keeps provider choices and credentials under your control and assumes no presets.
+- [Codex Recursive Self-Improvement](https://github.com/engbyume/codex-recursive-self-improvement) (by Jeremy): Reviews task evidence for repeatable agent mistakes and turns verified causes into small, authorized improvements to prompts, skills, checks, memory, or runbooks. It improves the surrounding workflow, not model weights or hidden system messages.
+- [Codex Budget Model Router](https://github.com/engbyume/codex-budget-model-router) (by Jeremy): Routes Codex parent and subagent work across GPT-6 Luna / max (easy/medium), GPT-6.1 Terra / low (routine hard), and GPT-6.2 Sol / medium (complex/high-risk).
+
+## 3. Gemini-adapted skills
+
+Skills tailored specifically for Gemini / Antigravity workflows and model routing.
+
+- [Gemini Free Trial Model Router](https://github.com/engbyume/gemini-free-trial-model-router) (by Jeremy): Model router for users on the free trial of the $20 Gemini plan without access to higher-tier paid models, routing across Hydrogen Low (easy/medium), Hydrogen Medium (routine/regular hard), and Hydrogen High (extra-hard/complex+).
 
 ## Created by Jeremy
 
